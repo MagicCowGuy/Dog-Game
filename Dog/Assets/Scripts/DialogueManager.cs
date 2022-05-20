@@ -1,0 +1,131 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
+
+public class DialogueManager : MonoBehaviour {
+
+	public GameObject dialoguePannel;
+	public expandMenu menuPannel;
+	public GameObject blackoutPannel;
+	public GameObject QuestCardsPannel;
+	public QuestControl QuestControlScript;
+	public TextMeshProUGUI textName;
+	public TextMeshProUGUI textDialogue;
+	public Image playerchatimage;
+	public Image NPCchatimage;
+	public NPC currentNPC;
+	private bool opendialogue = false;
+
+	public GameObject QuestCardPrefab;
+
+	Queue<string> sentences;
+	Queue<string> names;
+
+	// Use this for initialization
+	void Start () {
+		sentences = new Queue<string>();
+		names = new Queue<string>();
+	}
+
+	void Update () {
+		if (Input.GetMouseButtonDown(0) && opendialogue)
+			{
+		    DisplayNextSentence();
+			}
+	}
+
+	public void StartDialogue (Dialogue dialogue, Sprite convoImage, GameObject NPCobj){
+		menuPannel.menuHide();
+		dialoguePannel.SetActive(true);
+		opendialogue = true;
+		blackoutPannel.SetActive(true);
+		currentNPC = NPCobj.GetComponent<NPC>();
+		Debug.Log("Starting conversation");
+		NPCchatimage.sprite = convoImage;
+		//textName.text = dialogue.name;
+		sentences.Clear();
+		names.Clear();
+
+		foreach (string sentence in dialogue.sentences) {
+			sentences.Enqueue(sentence);
+		}
+
+		foreach (string name in dialogue.names) {
+			names.Enqueue(name);
+		}
+
+		//DisplayNextName();
+		DisplayNextSentence();
+	}
+
+	public void DisplayNextSentence (){
+		if (sentences.Count == 0){
+			EndDialogue();
+			if(currentNPC.QuestToOffer.Length > 0){
+				QuestControlScript.OfferQuests();
+				PopulateQuestList();
+			}else{
+				blackoutPannel.SetActive(false);
+				menuPannel.menuShow();
+				//NPC.GetComponent<NPC>().ReleaseNPC();
+			}
+			return;
+		}
+
+		string name = names.Dequeue();
+		string sentence = sentences.Dequeue();
+		StopAllCoroutines();
+		textName.text = name;
+		if (name == "You"){
+			playerchatimage.color = Color.white;
+			NPCchatimage.color = new Color(0.45f, 0.45f, 0.45f, 1);
+		} else {
+			NPCchatimage.color = Color.white;
+			playerchatimage.color = new Color(0.45f, 0.45f, 0.45f, 1);
+		}
+		StartCoroutine(TypeSentence(sentence));
+	}
+
+	IEnumerator TypeSentence (string sentence){
+		textDialogue.text = "";
+		foreach (char letter in sentence.ToCharArray()){
+			textDialogue.text += letter;
+			yield return null;
+		}
+	}
+
+	void EndDialogue() {
+		Debug.Log("End of conversation");
+		dialoguePannel.SetActive(false);
+		opendialogue = false;
+		//blackoutPannel.SetActive(false);
+	}
+
+	public void ReleaseCurrentNPC(){
+		currentNPC.GetComponent<NPC>().ReleaseNPC();
+
+		currentNPC = null;
+	}
+
+	void PopulateQuestList() {
+		//first clear out QuestCardsPannel
+		foreach (Transform child in QuestCardsPannel.transform){
+			GameObject.Destroy(child.gameObject);
+		}
+		//then from the list on NPC make all the new cards
+		float offsetcard = 0;
+		int cardcount = currentNPC.QuestToOffer.Length;
+		int cardSpacing = 280;
+
+		foreach (Quest quest in currentNPC.QuestToOffer){
+			print(quest.name);
+			GameObject displayQuestCard = Instantiate (QuestCardPrefab, QuestCardsPannel.transform);
+			displayQuestCard.GetComponent<QuestCardSetup>().SetupCard(quest,0);
+			displayQuestCard.GetComponent<RectTransform>().anchoredPosition = new Vector2(offsetcard - (((cardcount - 1) * cardSpacing)/2), 0);
+			offsetcard += cardSpacing;
+		}
+	}
+
+}

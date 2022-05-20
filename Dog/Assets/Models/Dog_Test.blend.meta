@@ -1,0 +1,2280 @@
+fileFormatVersion: 2
+guid: 8e2f14de661c449a9a0e0d36310f741e
+ModelImporter:
+  serializedVersion: 20101
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: body_control
+  - first:
+      1: 100002
+    second: Corgi
+  - first:
+      1: 100004
+    second: Corgi_Armature
+  - first:
+      1: 100006
+    second: //RootNode
+  - first:
+      1: 100008
+    second: head
+  - first:
+      1: 100010
+    second: head_jaw
+  - first:
+      1: 100012
+    second: head_jaw_001
+  - first:
+      1: 100014
+    second: head_jaw_002
+  - first:
+      1: 100016
+    second: head_nose
+  - first:
+      1: 100018
+    second: hip_L
+  - first:
+      1: 100020
+    second: hip_R
+  - first:
+      1: 100022
+    second: hips
+  - first:
+      1: 100024
+    second: leg_back_lower_L
+  - first:
+      1: 100026
+    second: leg_back_lower_R
+  - first:
+      1: 100028
+    second: leg_back_upper_L
+  - first:
+      1: 100030
+    second: leg_back_upper_R
+  - first:
+      1: 100032
+    second: leg_front_lower_L
+  - first:
+      1: 100034
+    second: leg_front_lower_R
+  - first:
+      1: 100036
+    second: leg_front_upper_L
+  - first:
+      1: 100038
+    second: leg_front_upper_R
+  - first:
+      1: 100040
+    second: neck
+  - first:
+      1: 100042
+    second: paw_back_L
+  - first:
+      1: 100044
+    second: paw_back_R
+  - first:
+      1: 100046
+    second: paw_front_L
+  - first:
+      1: 100048
+    second: paw_front_R
+  - first:
+      1: 100050
+    second: pelvis
+  - first:
+      1: 100052
+    second: ribs
+  - first:
+      1: 100054
+    second: shoulder_L
+  - first:
+      1: 100056
+    second: shoulder_R
+  - first:
+      1: 100058
+    second: spine
+  - first:
+      1: 100060
+    second: tail_end
+  - first:
+      1: 100062
+    second: tail_mid
+  - first:
+      1: 100064
+    second: tail_start
+  - first:
+      1: 100066
+    second: head_ear_end_L
+  - first:
+      1: 100068
+    second: head_ear_L
+  - first:
+      1: 100070
+    second: head_ear_end_R_001
+  - first:
+      1: 100072
+    second: head_ear_R_001
+  - first:
+      1: 100074
+    second: head_ear_end_R
+  - first:
+      1: 100076
+    second: head_ear_R
+  - first:
+      4: 400000
+    second: body_control
+  - first:
+      4: 400002
+    second: Corgi
+  - first:
+      4: 400004
+    second: Corgi_Armature
+  - first:
+      4: 400006
+    second: //RootNode
+  - first:
+      4: 400008
+    second: head
+  - first:
+      4: 400010
+    second: head_jaw
+  - first:
+      4: 400012
+    second: head_jaw_001
+  - first:
+      4: 400014
+    second: head_jaw_002
+  - first:
+      4: 400016
+    second: head_nose
+  - first:
+      4: 400018
+    second: hip_L
+  - first:
+      4: 400020
+    second: hip_R
+  - first:
+      4: 400022
+    second: hips
+  - first:
+      4: 400024
+    second: leg_back_lower_L
+  - first:
+      4: 400026
+    second: leg_back_lower_R
+  - first:
+      4: 400028
+    second: leg_back_upper_L
+  - first:
+      4: 400030
+    second: leg_back_upper_R
+  - first:
+      4: 400032
+    second: leg_front_lower_L
+  - first:
+      4: 400034
+    second: leg_front_lower_R
+  - first:
+      4: 400036
+    second: leg_front_upper_L
+  - first:
+      4: 400038
+    second: leg_front_upper_R
+  - first:
+      4: 400040
+    second: neck
+  - first:
+      4: 400042
+    second: paw_back_L
+  - first:
+      4: 400044
+    second: paw_back_R
+  - first:
+      4: 400046
+    second: paw_front_L
+  - first:
+      4: 400048
+    second: paw_front_R
+  - first:
+      4: 400050
+    second: pelvis
+  - first:
+      4: 400052
+    second: ribs
+  - first:
+      4: 400054
+    second: shoulder_L
+  - first:
+      4: 400056
+    second: shoulder_R
+  - first:
+      4: 400058
+    second: spine
+  - first:
+      4: 400060
+    second: tail_end
+  - first:
+      4: 400062
+    second: tail_mid
+  - first:
+      4: 400064
+    second: tail_start
+  - first:
+      4: 400066
+    second: head_ear_end_L
+  - first:
+      4: 400068
+    second: head_ear_L
+  - first:
+      4: 400070
+    second: head_ear_end_R_001
+  - first:
+      4: 400072
+    second: head_ear_R_001
+  - first:
+      4: 400074
+    second: head_ear_end_R
+  - first:
+      4: 400076
+    second: head_ear_R
+  - first:
+      43: 4300000
+    second: Corgi
+  - first:
+      74: 7400000
+    second: Running
+  - first:
+      74: 7400002
+    second: Stopped
+  - first:
+      74: 7400004
+    second: Stopped
+  - first:
+      74: 7400006
+    second: Bark
+  - first:
+      74: 7400008
+    second: Pickup
+  - first:
+      74: 7400010
+    second: Holding
+  - first:
+      74: 7400012
+    second: Drop
+  - first:
+      74: 7400014
+    second: Throw
+  - first:
+      74: 7400016
+    second: Idle_01
+  - first:
+      74: 7400018
+    second: Rotatetaps
+  - first:
+      74: 7400020
+    second: TippyTaps
+  - first:
+      74: 7400022
+    second: Sit
+  - first:
+      74: 7400024
+    second: Sitting
+  - first:
+      74: 7400026
+    second: Jumping
+  - first:
+      74: 7400028
+    second: Idle_02
+  - first:
+      74: 7400030
+    second: Idle_03
+  - first:
+      74: 7400032
+    second: TippyTaps
+  - first:
+      74: 7400034
+    second: Default Take
+  - first:
+      74: 7400036
+    second: Stopped
+  - first:
+      74: 7400038
+    second: Tiptap
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Corgi
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__Dog_original_psd
+    second: {fileID: 2100000, guid: c237bc30ebdd14ef69df11f678cbf983, type: 2}
+  materials:
+    materialImportMode: 0
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 0
+    optimizeGameObjects: 0
+    motionNodeName: Corgi_Armature/body_control
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 1
+    animationCompression: 0
+    animationRotationError: 0.1
+    animationPositionError: 0.1
+    animationScaleError: 0.1
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Stopped
+      takeName: Default Take
+      internalID: 7400002
+      firstFrame: 82
+      lastFrame: 137
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Running
+      takeName: Default Take
+      internalID: 7400000
+      firstFrame: 1
+      lastFrame: 80
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.20925108
+        functionName: Footstep
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.4185022
+        functionName: Footstep
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.74849075
+        functionName: Footstep
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 1
+        functionName: Footstep
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Corgi
+        weight: 1
+      - path: Corgi_Armature
+        weight: 1
+      - path: Corgi_Armature/body_control
+        weight: 1
+      - path: Corgi_Armature/body_control/hips
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L/paw_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R/paw_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L/head_ear_end.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R/head_ear_end.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw/head_jaw_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L/paw_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R/paw_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end/tail_end_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L/knee_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R/knee_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L/knee_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R/knee_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L/pawIK_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R/pawIK_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L/pawIK_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R/pawIK_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK/ribsIK_end
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK/tail_endIK_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Bark
+      takeName: Default Take
+      internalID: 7400006
+      firstFrame: 139
+      lastFrame: 152
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Corgi
+        weight: 1
+      - path: Corgi_Armature
+        weight: 1
+      - path: Corgi_Armature/body_control
+        weight: 1
+      - path: Corgi_Armature/body_control/hips
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip_L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip_L/leg_back_upper_L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip_L/leg_back_upper_L/leg_back_lower_L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip_L/leg_back_upper_L/leg_back_lower_L/paw_back_L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip_R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip_R/leg_back_upper_R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip_R/leg_back_upper_R/leg_back_lower_R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip_R/leg_back_upper_R/leg_back_lower_R/paw_back_R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear_L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear_L/head_ear_end_L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear_R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear_R/head_ear_end_R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder_L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder_L/leg_front_upper_L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder_L/leg_front_upper_L/leg_front_lower_L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder_L/leg_front_upper_L/leg_front_lower_L/paw_front_L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder_R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder_R/leg_front_upper_R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder_R/leg_front_upper_R/leg_front_lower_R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder_R/leg_front_upper_R/leg_front_lower_R/paw_front_R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Pickup
+      takeName: Default Take
+      internalID: 7400008
+      firstFrame: 157
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 16
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Corgi
+        weight: 0
+      - path: Corgi_Armature
+        weight: 0
+      - path: Corgi_Armature/body_control
+        weight: 0
+      - path: Corgi_Armature/body_control/hips
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L/paw_back.L_end
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R/paw_back.R_end
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/spine
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L/head_ear_end.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R/head_ear_end.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw/head_jaw_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L/paw_front.L_end
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R/paw_front.R_end
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/tail_start
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end
+        weight: 0
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end/tail_end_end
+        weight: 0
+      - path: Corgi_Armature/body_control/knee_back.L
+        weight: 0
+      - path: Corgi_Armature/body_control/knee_back.L/knee_back.L_end
+        weight: 0
+      - path: Corgi_Armature/body_control/knee_back.R
+        weight: 0
+      - path: Corgi_Armature/body_control/knee_back.R/knee_back.R_end
+        weight: 0
+      - path: Corgi_Armature/body_control/knee_front.L
+        weight: 0
+      - path: Corgi_Armature/body_control/knee_front.L/knee_front.L_end
+        weight: 0
+      - path: Corgi_Armature/body_control/knee_front.R
+        weight: 0
+      - path: Corgi_Armature/body_control/knee_front.R/knee_front.R_end
+        weight: 0
+      - path: Corgi_Armature/body_control/pawIK_back.L
+        weight: 0
+      - path: Corgi_Armature/body_control/pawIK_back.L/pawIK_back.L_end
+        weight: 0
+      - path: Corgi_Armature/body_control/pawIK_back.R
+        weight: 0
+      - path: Corgi_Armature/body_control/pawIK_back.R/pawIK_back.R_end
+        weight: 0
+      - path: Corgi_Armature/body_control/pawIK_front.L
+        weight: 0
+      - path: Corgi_Armature/body_control/pawIK_front.L/pawIK_front.L_end
+        weight: 0
+      - path: Corgi_Armature/body_control/pawIK_front.R
+        weight: 0
+      - path: Corgi_Armature/body_control/pawIK_front.R/pawIK_front.R_end
+        weight: 0
+      - path: Corgi_Armature/body_control/ribsIK
+        weight: 0
+      - path: Corgi_Armature/body_control/ribsIK/ribsIK_end
+        weight: 0
+      - path: Corgi_Armature/body_control/tail_endIK
+        weight: 0
+      - path: Corgi_Armature/body_control/tail_endIK/tail_endIK_end
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 169
+    - serializedVersion: 16
+      name: Drop
+      takeName: Default Take
+      internalID: 7400012
+      firstFrame: 200
+      lastFrame: 217
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Corgi
+        weight: 1
+      - path: Corgi_Armature
+        weight: 1
+      - path: Corgi_Armature/body_control
+        weight: 1
+      - path: Corgi_Armature/body_control/hips
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L/paw_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R/paw_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L/head_ear_end.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R/head_ear_end.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw/head_jaw_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L/paw_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R/paw_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end/tail_end_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L/knee_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R/knee_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L/knee_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R/knee_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L/pawIK_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R/pawIK_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L/pawIK_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R/pawIK_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK/ribsIK_end
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK/tail_endIK_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Throw
+      takeName: Doggo_Corgi_01_ArmatureAction_001
+      internalID: 7400014
+      firstFrame: 220
+      lastFrame: 260
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.6378878
+        functionName: ThrowEverything
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Corgi
+        weight: 1
+      - path: Corgi_Armature
+        weight: 1
+      - path: Corgi_Armature/body_control
+        weight: 1
+      - path: Corgi_Armature/body_control/hips
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L/paw_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R/paw_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L/head_ear_end.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R/head_ear_end.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw/head_jaw_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L/paw_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R/paw_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end/tail_end_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L/knee_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R/knee_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L/knee_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R/knee_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L/pawIK_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R/pawIK_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L/pawIK_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R/pawIK_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK/ribsIK_end
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK/tail_endIK_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sit
+      takeName: Doggo_Corgi_01_ArmatureAction_001
+      internalID: 7400022
+      firstFrame: 336
+      lastFrame: 350
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Corgi
+        weight: 1
+      - path: Corgi_Armature
+        weight: 1
+      - path: Corgi_Armature/body_control
+        weight: 1
+      - path: Corgi_Armature/body_control/hips
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L/paw_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R/paw_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L/head_ear_end.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R/head_ear_end.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw/head_jaw_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L/paw_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R/paw_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end/tail_end_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L/knee_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R/knee_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L/knee_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R/knee_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L/pawIK_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R/pawIK_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L/pawIK_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R/pawIK_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK/ribsIK_end
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK/tail_endIK_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Sitting
+      takeName: Doggo_Corgi_01_ArmatureAction_001
+      internalID: 7400024
+      firstFrame: 350
+      lastFrame: 360
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Corgi
+        weight: 1
+      - path: Corgi_Armature
+        weight: 1
+      - path: Corgi_Armature/body_control
+        weight: 1
+      - path: Corgi_Armature/body_control/hips
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L/paw_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R/paw_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L/head_ear_end.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R/head_ear_end.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw/head_jaw_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L/paw_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R/paw_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end/tail_end_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L/knee_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R/knee_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L/knee_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R/knee_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L/pawIK_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R/pawIK_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L/pawIK_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R/pawIK_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK/ribsIK_end
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK/tail_endIK_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Jumping
+      takeName: Doggo_Corgi_01_ArmatureAction_001
+      internalID: 7400026
+      firstFrame: 362
+      lastFrame: 371
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Corgi
+        weight: 1
+      - path: Corgi_Armature
+        weight: 1
+      - path: Corgi_Armature/body_control
+        weight: 1
+      - path: Corgi_Armature/body_control/hips
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L/paw_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R/paw_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L/head_ear_end.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R/head_ear_end.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw/head_jaw_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L/paw_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R/paw_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end/tail_end_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L/knee_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R/knee_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L/knee_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R/knee_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L/pawIK_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R/pawIK_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L/pawIK_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R/pawIK_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK/ribsIK_end
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK/tail_endIK_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle_02
+      takeName: Default Take
+      internalID: 7400028
+      firstFrame: 373
+      lastFrame: 417
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Corgi
+        weight: 1
+      - path: Corgi_Armature
+        weight: 1
+      - path: Corgi_Armature/body_control
+        weight: 1
+      - path: Corgi_Armature/body_control/hips
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L/paw_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R/paw_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L/head_ear_end.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R/head_ear_end.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw/head_jaw_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L/paw_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R/paw_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end/tail_end_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L/knee_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R/knee_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L/knee_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R/knee_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L/pawIK_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R/pawIK_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L/pawIK_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R/pawIK_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK/ribsIK_end
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK/tail_endIK_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle_01
+      takeName: Default Take
+      internalID: 7400016
+      firstFrame: 262
+      lastFrame: 319
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Corgi
+        weight: 1
+      - path: Corgi_Armature
+        weight: 1
+      - path: Corgi_Armature/body_control
+        weight: 1
+      - path: Corgi_Armature/body_control/hips
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L/paw_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R/paw_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L/head_ear_end.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R/head_ear_end.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw/head_jaw_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L/paw_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R/paw_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end/tail_end_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L/knee_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R/knee_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L/knee_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R/knee_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L/pawIK_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R/pawIK_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L/pawIK_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R/pawIK_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK/ribsIK_end
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK/tail_endIK_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle_03
+      takeName: Default Take
+      internalID: 7400030
+      firstFrame: 417
+      lastFrame: 467
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Corgi
+        weight: 1
+      - path: Corgi_Armature
+        weight: 1
+      - path: Corgi_Armature/body_control
+        weight: 1
+      - path: Corgi_Armature/body_control/hips
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L/paw_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R/paw_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L/head_ear_end.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R/head_ear_end.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw/head_jaw_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L/paw_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R/paw_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end/tail_end_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L/knee_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R/knee_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L/knee_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R/knee_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L/pawIK_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R/pawIK_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L/pawIK_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R/pawIK_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK/ribsIK_end
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK/tail_endIK_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Tiptap
+      takeName: Default Take
+      internalID: 7400038
+      firstFrame: 322
+      lastFrame: 336
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Corgi
+        weight: 1
+      - path: Corgi_Armature
+        weight: 1
+      - path: Corgi_Armature/body_control
+        weight: 1
+      - path: Corgi_Armature/body_control/hips
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.L/leg_back_upper.L/leg_back_lower.L/paw_back.L/paw_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/hip.R/leg_back_upper.R/leg_back_lower.R/paw_back.R/paw_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.L/head_ear_end.L/head_ear_end.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_ear.R/head_ear_end.R/head_ear_end.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/neck/head/head_nose/head_jaw/head_jaw_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.L/leg_front_upper.L/leg_front_lower.L/paw_front.L/paw_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/pelvis/spine/ribs/shoulder.R/leg_front_upper.R/leg_front_lower.R/paw_front.R/paw_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end
+        weight: 1
+      - path: Corgi_Armature/body_control/hips/tail_start/tail_mid/tail_end/tail_end_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.L/knee_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_back.R/knee_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.L/knee_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/knee_front.R/knee_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.L/pawIK_back.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_back.R/pawIK_back.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.L/pawIK_front.L_end
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R
+        weight: 1
+      - path: Corgi_Armature/body_control/pawIK_front.R/pawIK_front.R_end
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK
+        weight: 1
+      - path: Corgi_Armature/body_control/ribsIK/ribsIK_end
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK
+        weight: 1
+      - path: Corgi_Armature/body_control/tail_endIK/tail_endIK_end
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 1
+    maxBonesPerVertex: 14
+    minBoneWeight: 0.001
+    meshOptimizationFlags: 1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: body_control
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,679 @@
+fileFormatVersion: 2
+guid: 107e0fddfd51d4854877439faf462156
+ModelImporter:
+  serializedVersion: 20200
+  internalIDToNameTable:
+  - first:
+      1: 100000
+    second: Arm_Lower_L
+  - first:
+      1: 100002
+    second: Arm_Lower_R
+  - first:
+      1: 100004
+    second: Arm_Upper_L
+  - first:
+      1: 100006
+    second: Arm_Upper_R
+  - first:
+      1: 100008
+    second: Armature
+  - first:
+      1: 100010
+    second: Bone
+  - first:
+      1: 100012
+    second: Cube_001
+  - first:
+      1: 100014
+    second: Cube_002
+  - first:
+      1: 100016
+    second: Foot_Controller_L
+  - first:
+      1: 100018
+    second: Foot_Controller_R
+  - first:
+      1: 100020
+    second: Foot_L
+  - first:
+      1: 100022
+    second: Foot_R
+  - first:
+      1: 100024
+    second: Hand_IK_R
+  - first:
+      1: 100026
+    second: Hand_L
+  - first:
+      1: 100028
+    second: Hand_R
+  - first:
+      1: 100030
+    second: Head
+  - first:
+      1: 100032
+    second: Hips
+  - first:
+      1: 100034
+    second: Leg_Lower_L
+  - first:
+      1: 100036
+    second: Leg_Lower_R
+  - first:
+      1: 100038
+    second: Leg_Upper_L
+  - first:
+      1: 100040
+    second: Leg_Upper_R
+  - first:
+      1: 100042
+    second: Neck
+  - first:
+      1: 100044
+    second: //RootNode
+  - first:
+      1: 100046
+    second: OldGuy_Controller
+  - first:
+      1: 100048
+    second: Pelvis
+  - first:
+      1: 100050
+    second: Ribs
+  - first:
+      1: 100052
+    second: Shoulder_L
+  - first:
+      1: 100054
+    second: Shoulder_R
+  - first:
+      1: 100056
+    second: Spine
+  - first:
+      1: 100058
+    second: Toes_L
+  - first:
+      1: 100060
+    second: Toes_R
+  - first:
+      4: 400000
+    second: Arm_Lower_L
+  - first:
+      4: 400002
+    second: Arm_Lower_R
+  - first:
+      4: 400004
+    second: Arm_Upper_L
+  - first:
+      4: 400006
+    second: Arm_Upper_R
+  - first:
+      4: 400008
+    second: Armature
+  - first:
+      4: 400010
+    second: Bone
+  - first:
+      4: 400012
+    second: Cube_001
+  - first:
+      4: 400014
+    second: Cube_002
+  - first:
+      4: 400016
+    second: Foot_Controller_L
+  - first:
+      4: 400018
+    second: Foot_Controller_R
+  - first:
+      4: 400020
+    second: Foot_L
+  - first:
+      4: 400022
+    second: Foot_R
+  - first:
+      4: 400024
+    second: Hand_IK_R
+  - first:
+      4: 400026
+    second: Hand_L
+  - first:
+      4: 400028
+    second: Hand_R
+  - first:
+      4: 400030
+    second: Head
+  - first:
+      4: 400032
+    second: Hips
+  - first:
+      4: 400034
+    second: Leg_Lower_L
+  - first:
+      4: 400036
+    second: Leg_Lower_R
+  - first:
+      4: 400038
+    second: Leg_Upper_L
+  - first:
+      4: 400040
+    second: Leg_Upper_R
+  - first:
+      4: 400042
+    second: Neck
+  - first:
+      4: 400044
+    second: //RootNode
+  - first:
+      4: 400046
+    second: OldGuy_Controller
+  - first:
+      4: 400048
+    second: Pelvis
+  - first:
+      4: 400050
+    second: Ribs
+  - first:
+      4: 400052
+    second: Shoulder_L
+  - first:
+      4: 400054
+    second: Shoulder_R
+  - first:
+      4: 400056
+    second: Spine
+  - first:
+      4: 400058
+    second: Toes_L
+  - first:
+      4: 400060
+    second: Toes_R
+  - first:
+      21: 2100000
+    second: Material_002__Old_Man_01_psd_001
+  - first:
+      21: 2100002
+    second: Material__Old_Man_01_psd_001
+  - first:
+      21: 2100004
+    second: Material_001
+  - first:
+      23: 2300000
+    second: Cube_002
+  - first:
+      33: 3300000
+    second: Cube_002
+  - first:
+      43: 4300000
+    second: Cube_001
+  - first:
+      43: 4300002
+    second: Cube_002
+  - first:
+      74: 7400000
+    second: OldMan_Standing
+  - first:
+      74: 7400002
+    second: ArmatureAction
+  - first:
+      74: 7400004
+    second: OldMan_Walking
+  - first:
+      74: 7400006
+    second: OldMan_PickUp
+  - first:
+      74: 7400008
+    second: OldMan_Throw
+  - first:
+      95: 9500000
+    second: //RootNode
+  - first:
+      137: 13700000
+    second: Cube_001
+  - first:
+      41386430: 2186277476908879412
+    second: ImportLogs
+  externalObjects: {}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 3
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: OldMan_Standing
+      takeName: Default Take
+      internalID: 7400000
+      firstFrame: 0
+      lastFrame: 28
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 1
+      - path: Armature/OldGuy_Controller
+        weight: 1
+      - path: Armature/OldGuy_Controller/Elbow_IK.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Elbow_IK.L/Elbow_IK.L_end
+        weight: 1
+      - path: Armature/OldGuy_Controller/Elbow_IK.R
+        weight: 1
+      - path: Armature/OldGuy_Controller/Elbow_IK.R/Elbow_IK.R_end
+        weight: 1
+      - path: Armature/OldGuy_Controller/Foot_Controller.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Foot_Controller.L/Foot.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Foot_Controller.L/Foot.L/Ankle_IK.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Foot_Controller.L/Foot.L/Ankle_IK.L/Ankle_IK.L_end
+        weight: 1
+      - path: Armature/OldGuy_Controller/Foot_Controller.L/Foot.L/Toes.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Foot_Controller.L/Foot.L/Toes.L/Toes.L_end
+        weight: 1
+      - path: Armature/OldGuy_Controller/Foot_Controller.R
+        weight: 1
+      - path: Armature/OldGuy_Controller/Foot_Controller.R/Foot.R
+        weight: 1
+      - path: Armature/OldGuy_Controller/Foot_Controller.R/Foot.R/Ankle_IK.R
+        weight: 1
+      - path: Armature/OldGuy_Controller/Foot_Controller.R/Foot.R/Ankle_IK.R/Ankle_IK.R_end
+        weight: 1
+      - path: Armature/OldGuy_Controller/Foot_Controller.R/Foot.R/Toes.R
+        weight: 1
+      - path: Armature/OldGuy_Controller/Foot_Controller.R/Foot.R/Toes.R/Toes.R_end
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hand_IK.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hand_IK.L/Hand_IK.L_end
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hand_IK.R
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hand_IK.R/Bone
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hand_IK.R/Bone/Bone_end
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Leg_Upper.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Leg_Upper.L/Leg_Lower.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Leg_Upper.L/Leg_Lower.L/Leg_Lower.L_end
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Leg_Upper.R
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Leg_Upper.R/Leg_Lower.R
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Leg_Upper.R/Leg_Lower.R/Leg_Lower.R_end
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Neck
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Neck/Head
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Neck/Head/Head_end
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.L/Arm_Upper.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.L/Arm_Upper.L/Arm_Lower.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.L/Arm_Upper.L/Arm_Lower.L/Hand.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.L/Arm_Upper.L/Arm_Lower.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.R
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.R/Arm_Upper.R
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.R/Arm_Upper.R/Arm_Lower.R
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.R/Arm_Upper.R/Arm_Lower.R/Hand.R
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.R/Arm_Upper.R/Arm_Lower.R/Hand.R/Hand.R_end
+        weight: 1
+      - path: Armature/OldGuy_Controller/Knee_IK.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Knee_IK.L/Knee_IK.L_end
+        weight: 1
+      - path: Armature/OldGuy_Controller/Knee_IK.R
+        weight: 1
+      - path: Armature/OldGuy_Controller/Knee_IK.R/Knee_IK.R_end
+        weight: 1
+      - path: Armature/OldGuy_Controller/Ribs_IK
+        weight: 1
+      - path: Armature/OldGuy_Controller/Ribs_IK/Ribs_IK_end
+        weight: 1
+      - path: Cube.001
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: OldMan_Walking
+      takeName: Default Take
+      internalID: 7400004
+      firstFrame: 30
+      lastFrame: 99
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: OldMan_PickUp
+      takeName: Default Take
+      internalID: 7400006
+      firstFrame: 99
+      lastFrame: 199
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.44485298
+        functionName: PickupPickup
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: OldMan_Throw
+      takeName: Default Take
+      internalID: 7400008
+      firstFrame: 200
+      lastFrame: 259
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.7040442
+        functionName: ThrowPickup
+        data: 
+        objectReferenceParameter: {instanceID: 0}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Armature
+        weight: 0
+      - path: Armature/OldGuy_Controller
+        weight: 0
+      - path: Armature/OldGuy_Controller/Elbow_IK.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Elbow_IK.L/Elbow_IK.L_end
+        weight: 0
+      - path: Armature/OldGuy_Controller/Elbow_IK.R
+        weight: 0
+      - path: Armature/OldGuy_Controller/Elbow_IK.R/Elbow_IK.R_end
+        weight: 0
+      - path: Armature/OldGuy_Controller/Foot_Controller.L
+        weight: 0
+      - path: Armature/OldGuy_Controller/Foot_Controller.L/Foot.L
+        weight: 0
+      - path: Armature/OldGuy_Controller/Foot_Controller.L/Foot.L/Ankle_IK.L
+        weight: 0
+      - path: Armature/OldGuy_Controller/Foot_Controller.L/Foot.L/Ankle_IK.L/Ankle_IK.L_end
+        weight: 0
+      - path: Armature/OldGuy_Controller/Foot_Controller.L/Foot.L/Toes.L
+        weight: 0
+      - path: Armature/OldGuy_Controller/Foot_Controller.L/Foot.L/Toes.L/Toes.L_end
+        weight: 0
+      - path: Armature/OldGuy_Controller/Foot_Controller.R
+        weight: 0
+      - path: Armature/OldGuy_Controller/Foot_Controller.R/Foot.R
+        weight: 0
+      - path: Armature/OldGuy_Controller/Foot_Controller.R/Foot.R/Ankle_IK.R
+        weight: 0
+      - path: Armature/OldGuy_Controller/Foot_Controller.R/Foot.R/Ankle_IK.R/Ankle_IK.R_end
+        weight: 0
+      - path: Armature/OldGuy_Controller/Foot_Controller.R/Foot.R/Toes.R
+        weight: 0
+      - path: Armature/OldGuy_Controller/Foot_Controller.R/Foot.R/Toes.R/Toes.R_end
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hand_IK.L
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hand_IK.L/Hand_IK.L_end
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hand_IK.R
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hand_IK.R/Bone
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hand_IK.R/Bone/Bone_end
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Leg_Upper.L
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Leg_Upper.L/Leg_Lower.L
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Leg_Upper.L/Leg_Lower.L/Leg_Lower.L_end
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Leg_Upper.R
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Leg_Upper.R/Leg_Lower.R
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Leg_Upper.R/Leg_Lower.R/Leg_Lower.R_end
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Pelvis
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Neck
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Neck/Head
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Neck/Head/Head_end
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.L/Arm_Upper.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.L/Arm_Upper.L/Arm_Lower.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.L/Arm_Upper.L/Arm_Lower.L/Hand.L
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.L/Arm_Upper.L/Arm_Lower.L/Hand.L/Hand.L_end
+        weight: 1
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.R
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.R/Arm_Upper.R
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.R/Arm_Upper.R/Arm_Lower.R
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.R/Arm_Upper.R/Arm_Lower.R/Hand.R
+        weight: 0
+      - path: Armature/OldGuy_Controller/Hips/Pelvis/Spine/Ribs/Shoulder.R/Arm_Upper.R/Arm_Lower.R/Hand.R/Hand.R_end
+        weight: 0
+      - path: Armature/OldGuy_Controller/Knee_IK.L
+        weight: 0
+      - path: Armature/OldGuy_Controller/Knee_IK.L/Knee_IK.L_end
+        weight: 0
+      - path: Armature/OldGuy_Controller/Knee_IK.R
+        weight: 0
+      - path: Armature/OldGuy_Controller/Knee_IK.R/Knee_IK.R_end
+        weight: 0
+      - path: Armature/OldGuy_Controller/Ribs_IK
+        weight: 0
+      - path: Armature/OldGuy_Controller/Ribs_IK/Ribs_IK_end
+        weight: 0
+      - path: Cube.001
+        weight: 0
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    fileIdsGeneration: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    bakeAxisConversion: 0
+    preserveHierarchy: 0
+    skinWeightsMode: 1
+    maxBonesPerVertex: 14
+    minBoneWeight: 0.001
+    meshOptimizationFlags: 1
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVMarginMethod: 0
+    secondaryUVMinLightmapResolution: 40
+    secondaryUVMinObjectScale: 1
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: OldGuy_Controller
+    hasTranslationDoF: 0
+    hasExtraRoot: 1
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

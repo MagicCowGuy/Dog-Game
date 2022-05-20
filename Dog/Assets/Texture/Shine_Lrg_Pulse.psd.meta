@@ -1,0 +1,362 @@
+fileFormatVersion: 2
+guid: 54b2e13b40a0a99439821b159293448b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7678691673594489115
+    second: Shine_Lrg_Pulse_0
+  - first:
+      213: -7871516214751365078
+    second: Shine_Lrg_Pulse_0
+  - first:
+      213: -1597111606977551423
+    second: Shine_Lrg_0
+  - first:
+      213: -3198018313979005677
+    second: Shine_Lrg_Pulse_1
+  - first:
+      213: 6256970212375283680
+    second: Shine_Lrg_1
+  - first:
+      213: -2409856431219489947
+    second: Shine_Lrg_Pulse_2
+  - first:
+      213: -8087811843970233338
+    second: Shine_Lrg_0
+  - first:
+      213: -5343239577540545738
+    second: Shine_Lrg_Pulse_1
+  - first:
+      213: 2589938580960536998
+    second: Shine_Lrg_1
+  - first:
+      213: 6087968546298151813
+    second: Shine_Lrg_Pulse_2
+  - first:
+      213: -6655035661329442711
+    second: Shine_Lrg_2
+  - first:
+      213: 7456781876805319302
+    second: Shine_Lrg_Pulse_3
+  - first:
+      213: -3591514963120989953
+    second: Shine_Lrg_3
+  - first:
+      213: 258890846950971048
+    second: Shine_Lrg_Pulse_4
+  - first:
+      213: 3993616585833134838
+    second: Shine_Lrg_4
+  - first:
+      213: 1723337121219090341
+    second: Shine_Lrg_Pulse_5
+  - first:
+      213: 6069330547391610872
+    second: Shine_Lrg_5
+  - first:
+      213: 4057182678633011458
+    second: Shine_Lrg_Pulse_3
+  - first:
+      213: 2131718438974949961
+    second: Shine_Lrg_Pulse_4
+  - first:
+      213: 1649474332522802524
+    second: Shine_Lrg_Pulse_5
+  - first:
+      213: -5343239577540545738
+    second: Shine_Lrg_2
+  - first:
+      213: 2589938580960536998
+    second: Shine_Lrg_3
+  - first:
+      213: 6087968546298151813
+    second: Shine_Lrg_4
+  - first:
+      213: -600768168114563916
+    second: Shine_Lrg_5
+  - first:
+      213: 4057182678633011458
+    second: Shine_Lrg_6
+  - first:
+      213: 4375901967042826953
+    second: Shine_Lrg_7
+  - first:
+      213: 2131718438974949961
+    second: Shine_Lrg_8
+  - first:
+      213: -2391301465207696473
+    second: Shine_Lrg_9
+  - first:
+      213: 1649474332522802524
+    second: Shine_Lrg_10
+  - first:
+      213: -4204997251021812379
+    second: Shine_Lrg_11
+  - first:
+      213: 7456781876805319302
+    second: Shine_Lrg_6
+  - first:
+      213: 676859691875663070
+    second: Shine_Lrg_7
+  - first:
+      213: 258890846950971048
+    second: Shine_Lrg_8
+  - first:
+      213: -1826676375427725890
+    second: Shine_Lrg_9
+  - first:
+      213: 1723337121219090341
+    second: Shine_Lrg_10
+  - first:
+      213: 4141290646069620381
+    second: Shine_Lrg_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Shine_Lrg_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 512
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63333e6f9eff8d5b0800000000000000
+      internalID: -6655035661329442711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shine_Lrg_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 512
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5834add232fcc7450800000000000000
+      internalID: 3993616585833134838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shine_Lrg_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 512
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c05fd9af152cf80800000000000000
+      internalID: -1597111606977551423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shine_Lrg_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 512
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e744ded14935d650800000000000000
+      internalID: 6256970212375283680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shine_Lrg_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff85ca17b20682ec0800000000000000
+      internalID: -3591514963120989953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shine_Lrg_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ff34b5e9f79a3450800000000000000
+      internalID: 6069330547391610872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Shine_Lrg_0: -1597111606977551423
+      Shine_Lrg_2: -6655035661329442711
+      Shine_Lrg_5: 6069330547391610872
+      Shine_Lrg_1: 6256970212375283680
+      Shine_Lrg_4: 3993616585833134838
+      Shine_Lrg_3: -3591514963120989953
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

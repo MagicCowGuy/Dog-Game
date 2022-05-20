@@ -1,0 +1,24 @@
+fileFormatVersion: 2
+guid: 7127d1b365e34f642955f59aabdd0a49
+timeCreated: 1522563226
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Patty LaBelle
+  fontNames:
+  - Patty LaBelle
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 342840f068363ce428e4ddf35470afe6, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
