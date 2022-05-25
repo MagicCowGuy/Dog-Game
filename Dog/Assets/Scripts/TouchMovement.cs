@@ -47,7 +47,7 @@ public class TouchMovement : MonoBehaviour
 
   //Pickup Objects Values
   //private float grabDistance = 2;
-  private bool pickupClicked = false;
+  //private bool pickupClicked = false;
   public GameObject targetObject;
   //private Transform targetedPickup;
   private bool holdingPickup;
@@ -290,7 +290,7 @@ public class TouchMovement : MonoBehaviour
           if(targetObject.CompareTag ("Pickup")){
             DropEverything();
             targetObject = hit.collider.gameObject;
-						pickupClicked = true;
+						//pickupClicked = true;
 
             targetObject.GetComponent<HighlightEffect>().pubFlashCall();
 
@@ -329,7 +329,7 @@ public class TouchMovement : MonoBehaviour
             targetObject = GetClosestTarget (hit.point, GameObject.FindGameObjectsWithTag ("Pickup"));
             if (targetObject != null) {
               DropEverything ();
-              pickupClicked = true;
+              //pickupClicked = true;
               targetObject.GetComponent<HighlightEffect>().pubFlashCall();
 
               //walkTargetPos = targetObject.transform.position;

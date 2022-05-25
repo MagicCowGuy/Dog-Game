@@ -6,7 +6,7 @@ using UnityEngine;
 public class Quest : ScriptableObject
 {
 
-  public string name;
+  public new string name;
   public string description;
   public Sprite artwork;
   public int type;
