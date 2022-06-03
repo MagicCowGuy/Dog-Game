@@ -149,7 +149,7 @@ public class NPCGrandpa : MonoBehaviour
         } else {
           if (transform.position.z > -18.2f && myanim.GetCurrentAnimatorStateInfo(0).IsName("Standing")){
             myanim.SetTrigger("TrigThrow");
-            print ("Old man throw ball good");
+            //print ("Old man throw ball good");
             navMeshAgent.isStopped = true;
             navMeshAgent.ResetPath();
             navMeshAgent.isStopped = false;

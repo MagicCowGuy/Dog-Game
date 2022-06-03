@@ -1,3 +1,4 @@
+#if UNITY_EDITOR
 using UnityEditor;
 using UnityEngine;
 
@@ -33,3 +34,4 @@ public class PathNavPointDrawer : PropertyDrawer
         EditorGUI.EndProperty();
     }
 }
+#endif // UNITY_EDITOR
