@@ -8,22 +8,30 @@ public class TrafficControl : MonoBehaviour
     public float speedLimit;
     public GameObject[] RandomCarPool;
     public GameObject[] QueCars;
-    public float spawnCooldown;
+    //public float spawnCooldown;
+    public bool isTraffic = true;
     public Vector3 spawnLocation;
     // Start is called before the first frame update
     void Start()
     {
-      spawnCooldown = Random.Range(50,100);
+      StartCoroutine("spawnWaveCoRo");
     }
 
     // Update is called once per frame
     void Update()
     {
-      spawnCooldown -= 0.5f;
-      if(spawnCooldown <= 0){
-        spawnCooldown = Random.Range(50,200);
-          GameObject trafficSpawn = (GameObject)Instantiate (RandomCarPool[Random.Range(0,RandomCarPool.Length)], spawnLocation + new Vector3(0,0,Random.Range(-2,2)), Quaternion.Euler (0, 0, 0));
-          //print("Spawning Traffic");
+
+    }
+
+    IEnumerator spawnWaveCoRo() {
+      while(isTraffic){
+        spawnTraffic();
+        yield return new WaitForSeconds(Random.Range(3, 8));
       }
+      yield return null;
+    }
+
+    public void spawnTraffic(){
+      GameObject trafficSpawn = (GameObject)Instantiate (RandomCarPool[Random.Range(0,RandomCarPool.Length)], spawnLocation + new Vector3(0,0,Random.Range(-2,2)), Quaternion.Euler (0, 0, 0));
     }
 }

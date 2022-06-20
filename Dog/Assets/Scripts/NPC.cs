@@ -1,6 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
+
+#if UNITY_EDITOR
+using UnityEditor;
+#endif // UNITY_EDITOR
 
 public class NPC : MonoBehaviour {
 
@@ -20,6 +25,8 @@ public class NPC : MonoBehaviour {
 
 	public GameObject gameControlObj;
 
+	public Vector3[] spawnPoints;
+
 	public bool holdforplayer = false;
 
 	public void Start() {
@@ -32,6 +39,17 @@ public class NPC : MonoBehaviour {
 		}
 		rndoffset = Random.Range (0.0f, 1.0f);
 		dm = gameControlObj.GetComponent<DialogueManager>();
+
+
+
+
+	}
+
+	public void SpawnSetup(){
+		//Vector3[] posSpawnPoints = newNPC.GetComponent<NPC>().spawnPoints;
+    int spawnPointRef = Random.Range(0, spawnPoints.Length - 1);
+    transform.position = spawnPoints[spawnPointRef];
+		transform.GetComponent<NavMeshAgent>().Warp(transform.position);
 	}
 
 	public void Update() {
@@ -78,3 +96,33 @@ public class NPC : MonoBehaviour {
 	}
 
 }
+
+
+
+#if UNITY_EDITOR
+[CustomEditor(typeof(NPC))]
+public class NPC_Editor : Editor
+{
+
+	public void OnSceneGUI()
+	{
+		var LinkScriptNPC = target as NPC;
+		drawPoints(LinkScriptNPC.spawnPoints);
+
+	}
+
+	public void drawPoints(Vector3[] pointsToDraw){
+		for(int i = 0; i < pointsToDraw.Length; i++){
+			EditorGUI.BeginChangeCheck();
+			Vector3 newPoint = Handles.PositionHandle(pointsToDraw[i], Quaternion.identity);
+			if (EditorGUI.EndChangeCheck())
+			{
+				Undo.RecordObject(target, "Update Spawn Point");
+				pointsToDraw[i] = newPoint;
+			}
+		}
+
+	}
+
+}
+#endif // UNITY_EDITOR

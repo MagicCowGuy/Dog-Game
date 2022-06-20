@@ -34,10 +34,12 @@ public class NPC_Control : MonoBehaviour
     }
 
     void SpawnMob (int prefabRef){
-      GameObject newNPC = Instantiate (NPCPrefabIndex[prefabRef], new Vector3(-35,-2.4f,-17), Quaternion.LookRotation(Vector3.forward));
+      GameObject newNPC = Instantiate (NPCPrefabIndex[prefabRef], new Vector3(0,0,0), Quaternion.LookRotation(Vector3.forward));
       newNPC.GetComponent<NPC>().MobCodeNo = prefabRef;
       newNPC.GetComponent<NPC>().gameControlObj = this.gameObject;
       NPCPrefabRollCall[prefabRef] = true;
+
+      newNPC.GetComponent<NPC>().SpawnSetup();
     }
 
     IEnumerator SpawnCheckCoRo(){

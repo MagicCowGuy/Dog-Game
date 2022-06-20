@@ -38,6 +38,7 @@ public class TouchMovement : MonoBehaviour
   private Vector3 walkTargetPos;
   //was initial touch on UI
   public bool uIClick = false;
+  public bool zoomPanMode = false;
   public bool uILockout = false;
 
   //Idle Effects
@@ -63,7 +64,7 @@ public class TouchMovement : MonoBehaviour
   //private bool interactableClicked;
   //private Transform targetInteractable;
   public GameObject currentInteractable;
-  private Interactable InteractScript;
+  public Interactable InteractScript;
 
   //Jumping Values
   public bool jumping = false;
@@ -99,7 +100,15 @@ public class TouchMovement : MonoBehaviour
     		}
       }
 
-      if (moveable && !uIClick && Input.GetMouseButton(0)){
+    if(Input.touchCount >= 2){
+      zoomPanMode = true;
+    }
+
+    if(Input.touchCount == 0){
+      zoomPanMode = false;
+    }
+
+      if (moveable && !uIClick && !zoomPanMode && Input.GetMouseButton(0)){
         rotationtimer += Time.deltaTime;
         if (!rotating && rotationtimer > 0.5f && navMeshAgent.velocity.magnitude < 0.1f) {
           rotating = true;
@@ -111,7 +120,7 @@ public class TouchMovement : MonoBehaviour
       }
 
       if (Input.GetMouseButtonUp(0)) {
-        if(moveable && !rotating && !uIClick && !jumping){
+        if(moveable && !rotating && !uIClick && !zoomPanMode && !jumping){
             WorldRaycast();
         }
 
@@ -144,8 +153,8 @@ public class TouchMovement : MonoBehaviour
             transform.rotation = Quaternion.LookRotation (newDir);
           }
           if(Vector3.Distance(navMeshAgent.destination, headObject.transform.position)< targetObject.GetComponent<Interactable>().radius + 0.7f){
-              currentInteractable = targetObject;
-              PlayerJump(targetObject.transform.position + InteractScript.posoffset,false,false);
+              //currentInteractable = targetObject;
+              PlayerJump(targetObject.transform.position + targetObject.GetComponent<Interactable>().posoffset,false,false);
               CancelInvoke("ClosestEdge");
           }
         }
@@ -276,7 +285,7 @@ public class TouchMovement : MonoBehaviour
 
       if (!rotating) {
         int layerMask = LayerMask.GetMask ("Player" , "Objects", "Interactables", "NPC");
-        if (Physics.Raycast (ray, out hit, 100, layerMask)){
+        if (Physics.Raycast (ray, out hit, 200, layerMask)){
 
           targetObject = hit.collider.gameObject;
           //User taps dog while he's not interacting with an object;
@@ -310,8 +319,9 @@ public class TouchMovement : MonoBehaviour
 
             if(interacting){
               StartCoroutine(CalcPathObtoOb(currentInteractable, targetObject, false));
+              Debug.Log("DISTANCE TO OTHER OBJECT IS: " + Vector3.Distance(currentInteractable.transform.position, targetObject.transform.position));
             }
-            InteractScript = targetObject.GetComponent<Interactable>();
+            //InteractScript = targetObject.GetComponent<Interactable>();
           }
 
           if(targetObject.CompareTag ("NPC")){
@@ -325,12 +335,11 @@ public class TouchMovement : MonoBehaviour
           CancelInvoke("ClosestEdge");
 
           int terrainlayerMask = LayerMask.GetMask ("Terrain");
-					if (Physics.Raycast (ray, out hit, 100, terrainlayerMask)) {
+					if (Physics.Raycast (ray, out hit, 200, terrainlayerMask)) {
             targetObject = GetClosestTarget (hit.point, GameObject.FindGameObjectsWithTag ("Pickup"));
             if (targetObject != null) {
               DropEverything ();
               //pickupClicked = true;
-              targetObject.GetComponent<HighlightEffect>().pubFlashCall();
 
               //walkTargetPos = targetObject.transform.position;
               //GoToDestination(targetObject.transform.position);
@@ -343,6 +352,8 @@ public class TouchMovement : MonoBehaviour
 
               //Instantiate (TapPickupEffect, walkTargetPos, Quaternion.Euler (90, 0, 0));
               publicSound(2, tapMoveSound);
+              targetObject.GetComponent<HighlightEffect>().pubFlashCall();
+
               return;
             }
 
@@ -375,6 +386,12 @@ public class TouchMovement : MonoBehaviour
 
     IEnumerator CalcPathObtoOb(GameObject CurrentObj, GameObject destObj, bool isPickup)
     {
+      if(Vector3.Distance(currentInteractable.transform.position, targetObject.transform.position) < 7){
+        print("JUMP DIRECT");
+        PlayerJump(targetObject.transform.position + targetObject.GetComponent<Interactable>().posoffset,false,false);
+        yield break;
+      }
+
       CurrentObj.GetComponent<NavMeshObstacle>().carving = false;
       if(!isPickup)
       destObj.GetComponent<NavMeshObstacle>().carving = false;
@@ -423,20 +440,26 @@ public class TouchMovement : MonoBehaviour
     }
 
     private void PlayerJump(Vector3 JumpTarget, bool toGround, bool objDest){
+      if(InteractScript != null){
+        InteractScript.interacting = false;
+      }
+
+
       jumpStartPos = transform.position;
       jumpTargetPos = JumpTarget;
+
+      //InteractScript = null;
       if(!objDest){
-        targetObject = null;
+        //targetObject = null;
       }
       transform.parent = null;
-      interacting = false;
       jumping = true;
       walking = false;
+      interacting = false;
       if(!toGround){
-          navMeshAgent.updatePosition = false;
-          navMeshAgent.isStopped = true;
+        navMeshAgent.updatePosition = false;
+        navMeshAgent.isStopped = true;
       }
-      currentInteractable.GetComponent<Interactable>().interacting = false;
       StartCoroutine(Jumping(toGround));
 
       anim.SetBool ("Jumping", true);
@@ -460,8 +483,6 @@ public class TouchMovement : MonoBehaviour
       }
       if(timeJumping >= 1.0f){
         PlayerLand(toGround);
-        jumping = false;
-        anim.SetBool ("Jumping", false);
       }
     }
 
@@ -471,15 +492,21 @@ public class TouchMovement : MonoBehaviour
         navMeshAgent.Warp(transform.position);
         GoToDestination(walkTargetPos);
         currentInteractable = null;
+        InteractScript = null;
 
         publicSound(3,landThudSound);
       } else {
+        currentInteractable = targetObject;
+        InteractScript = currentInteractable.GetComponent<Interactable>();
         interacting = true;
         InteractScript.PlayerLanding(transform.forward);
         if(InteractScript.parentForPlayer != null){
           transform.SetParent(InteractScript.parentForPlayer.transform);
         }
+        targetObject = null;
       }
+      jumping = false;
+      anim.SetBool ("Jumping", false);
     }
 
     public void DropEverything ()

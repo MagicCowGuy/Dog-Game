@@ -104,7 +104,7 @@ public class OldManControl : MonoBehaviour {
 
 	void walkAbout(){
 		//bit for choosing a new destination along the track.
-		navMeshAgent.destination = new Vector3(transform.position.x + Random.Range(2f,5f), -2.5f, Random.Range(-21f, -17.5f));
+		navMeshAgent.destination = new Vector3(transform.position.x + Random.Range(4f,7f), -2.5f, Random.Range(-21f, -17.5f));
 	}
 
 	void LateUpdate (){

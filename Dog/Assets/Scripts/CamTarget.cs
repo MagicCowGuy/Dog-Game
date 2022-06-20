@@ -14,8 +14,15 @@ public class CamTarget : MonoBehaviour {
 	private Vector3 vecrot;
 	public Vector3 targetfocuspos;
 	private Vector3 velocity = Vector3.zero;
-  public int cameraMode = 1;
+  public int cameraMode = 3;
 
+  public float zoomMax = 20;
+  public float zoomMin = -10;
+  private Vector3 zoomOffset;
+  public float zoomValue;
+  public bool twoTouch;
+  private Vector2 touchInitPos;
+  private Vector3 touchOffset;
 
 	public void Start () {
     StartCoroutine("CheckTargetPos");
@@ -23,6 +30,10 @@ public class CamTarget : MonoBehaviour {
 		targetfocuspos = new Vector3 (0, -6.5f, 0);
 
         Application.targetFrameRate = 60;
+        transform.position = new Vector3(-0.36f, 16, -80);
+        transform.rotation = Quaternion.Euler(-9, 0, 0);
+        targetpos = new Vector3 (-0.36f, 16, -80);
+
     }
 
 public void Awake(){
@@ -43,17 +54,57 @@ public void Awake(){
     //    shakeStrength = 0;
     //}
 
-      transform.position = Vector3.SmoothDamp(transform.position, targetpos, ref velocity , 30 * Time.deltaTime) + offsetCamera;
-      transform.rotation = Quaternion.Slerp(transform.rotation, targetrotation, 2 * Time.deltaTime);
+      zoom(Input.GetAxis("Mouse ScrollWheel") * 1.5f);
+
+      if(Input.touchCount == 2){
+        Touch touchZero = Input.GetTouch(0);
+        Touch touchOne = Input.GetTouch(1);
+
+        Vector2 touchZeroPrevPos = touchZero.position - touchZero.deltaPosition;
+        Vector2 touchOnePrevPos = touchOne.position - touchOne.deltaPosition;
+
+        float prevMag = (touchZeroPrevPos - touchOnePrevPos).magnitude;
+        float currentMag = (touchZero.position - touchOne.position).magnitude;
+
+        float diffMag = currentMag - prevMag;
+
+        zoom(diffMag * 0.005f);
+
+        if(!twoTouch){
+          twoTouch = true;
+          touchInitPos = (touchZero.position + touchOne.position) / 2;
+        }
+
+        touchOffset = (touchInitPos - ((touchZero.position + touchOne.position) / 2)) * -0.025f;
+
+      } else {
+        twoTouch = false;
+        touchInitPos = Vector2.zero;
+        touchOffset = Vector3.zero;
+      }
+
+      zoomOffset = new Vector3(0, zoomValue, -zoomValue);
+      //targetpos += zoomOffset;
+      //targetpos += touchOffset;
+
+      transform.position = Vector3.SmoothDamp(transform.position, targetpos + zoomOffset + touchOffset, ref velocity , 35 * Time.deltaTime) + offsetCamera;
+      transform.rotation = Quaternion.Slerp(transform.rotation, targetrotation, 1.25f * Time.deltaTime);
+
     }
+
+
+    void zoom(float increment){
+     zoomValue = Mathf.Clamp(zoomValue - (increment * 20), zoomMin, zoomMax);
+    }
+
 
     IEnumerator CheckTargetPos(){
       //Follow Player Mode
-      while(cameraMode != 0){
+      while(true){
       if(cameraMode == 1){
       targetfocuspos = focusplayer.transform.position;
-        if(focusplayer != null)
-        {
+        //if(focusplayer != null)
+        //{
           Vector3 focusplayerpos = focusplayer.position - new Vector3(0,0,-10);
           //is player on the ground level
           if (focusplayerpos.y < 0.5) {
@@ -82,7 +133,8 @@ public void Awake(){
             targetrotation = Quaternion.Euler (40, 0, 0);
             }
            }
-          }
+
+          //}
         }
 
         //Overview of Front Yard Mode
@@ -91,10 +143,16 @@ public void Awake(){
           targetrotation = Quaternion.Euler (45, 0, 0);
         }
 
-        yield return new WaitForSeconds(0.2f);
+        if(cameraMode == 3){
+          targetpos = new Vector3 (-0.36f, 16, -80);
+          targetrotation = Quaternion.Euler (-9, 0, 0);
+        }
+
+        yield return new WaitForSeconds(0.1f);
       }
     }
     public void SetTarget (Transform yourplayer) {
         focusplayer = yourplayer;
 	}
+
 }
