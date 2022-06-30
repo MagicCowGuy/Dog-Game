@@ -29,6 +29,10 @@ public class NPC_OldMan : MonoBehaviour
     public Transform leftHand;
     public GameObject gameControlObj;
 
+    public GameObject[] seats;
+
+    public int dirFactor;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -36,18 +40,27 @@ public class NPC_OldMan : MonoBehaviour
 
       navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
       myanim = GetComponent<Animator>();
+
+      print("OLD MAN IS " + transform.position.x);
       StartCoroutine("DelayCheck");
       StartCoroutine("CheckForItems");
+
+      seats = GameObject.FindGameObjectsWithTag("NPC_Seat");
+
     }
+
 
     // Update is called once per frame
     void Update()
     {
-
       myanim.SetFloat("Velocity", navMeshAgent.velocity.magnitude/navMeshAgent.speed);
+    }
 
-      if(transform.position.x > 40){
-        gameControlObj.GetComponent<NPC_Control>().DespawnMob(this.gameObject);
+    public void SetupNPC(){
+      if(transform.position.x < 0){
+        dirFactor = 1;
+      } else {
+        dirFactor = -1;
       }
     }
 
@@ -66,9 +79,14 @@ public class NPC_OldMan : MonoBehaviour
 
     IEnumerator CheckForItems() {
 
-
-
       while(NPCMode > 0){
+        //CHECK FOR DESPAWN
+
+        if(transform.position.x / dirFactor > 40){
+          gameControlObj.GetComponent<NPC_Control>().DespawnMob(this.gameObject);
+        }
+
+        //DESPAWN CHECK OVER
 
         if(NPCMode == 1){
 
@@ -126,14 +144,14 @@ public class NPC_OldMan : MonoBehaviour
         }
 
 
-                if(targetPickup.transform.position.z > -16.7f){
-                  delaying = false;
-                  NPCMode = 1;
-                  targetPickup = null;
-                  navMeshAgent.isStopped = true;
-                  navMeshAgent.ResetPath();
-                  navMeshAgent.isStopped = false;
-                }
+        if(targetPickup.transform.position.z > -16.7f){
+          delaying = false;
+          NPCMode = 1;
+          targetPickup = null;
+          navMeshAgent.isStopped = true;
+          navMeshAgent.ResetPath();
+          navMeshAgent.isStopped = false;
+        }
       }
 
       if(NPCMode == 3){
@@ -186,7 +204,7 @@ public class NPC_OldMan : MonoBehaviour
           }
         } else {
           delaying = false;
-          navMeshAgent.destination = new Vector3(transform.position.x + Random.Range(2f,5f), -2.5f, Random.Range(-20.5f, -18f));
+          navMeshAgent.destination = new Vector3(transform.position.x + (Random.Range(2f,5f) * dirFactor), -2.5f, Random.Range(-23.5f, -20.5f));
           delayTimer = 3;
         }
       }

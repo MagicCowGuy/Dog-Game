@@ -16,7 +16,7 @@ public class NPC_Control : MonoBehaviour
     {
       NPCPrefabRollCall = new bool[NPCPrefabIndex.Length];
 
-      StartCoroutine(SpawnCheckCoRo());
+      //StartCoroutine(SpawnCheckCoRo());
 
     }
 

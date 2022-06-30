@@ -29,6 +29,12 @@ public class NPC : MonoBehaviour {
 
 	public bool holdforplayer = false;
 
+	public int curProgChapter;
+	public int curProgSubChapter;
+	public DialogueThread curDialogue;
+	public SmallTalkThread curSmallTalk;
+	public NPC_Progression progStat;
+
 	public void Start() {
 		if(QuestSpriteLockObject == null){
 			QuestSpriteLockObject = this.gameObject;
@@ -39,17 +45,29 @@ public class NPC : MonoBehaviour {
 		}
 		rndoffset = Random.Range (0.0f, 1.0f);
 		dm = gameControlObj.GetComponent<DialogueManager>();
+		progStat = this.GetComponent<NPC_Progression>();
+		//later replace with load from save file.
+		ProgressUpdate(0,0);
+	}
 
+	public void ProgressUpdate(int newChap, int newSubCap){
+		curProgChapter = newChap;
+		curProgSubChapter = newSubCap;
+		curDialogue = progStat.progressionArray[newChap].progressStatus[newSubCap].diaThread;
 
+		if(progStat.progressionArray[newChap].progressStatus[newSubCap].stThread != null){
+			curSmallTalk = progStat.progressionArray[newChap].progressStatus[newSubCap].stThread;
+		}
 
-
+		gameObject.SendMessage("updateWatcher");
 	}
 
 	public void SpawnSetup(){
 		//Vector3[] posSpawnPoints = newNPC.GetComponent<NPC>().spawnPoints;
-    int spawnPointRef = Random.Range(0, spawnPoints.Length - 1);
+    int spawnPointRef = Random.Range(0, spawnPoints.Length);
     transform.position = spawnPoints[spawnPointRef];
 		transform.GetComponent<NavMeshAgent>().Warp(transform.position);
+		gameObject.SendMessage("SetupNPC");
 	}
 
 	public void Update() {
@@ -74,15 +92,16 @@ public class NPC : MonoBehaviour {
 		}
 	}
 
-
 	public void TriggerDialogue(){
 		StartCoroutine(UIChatDialogue());
 		emoteChat();
 		gameObject.SendMessage("PauseOrderNPC");
 	}
+
 	IEnumerator UIChatDialogue(){
-		yield return new WaitForSeconds(0.75f);
-		dm.StartDialogue(dialogue, NPCImage, this.gameObject);
+		yield return new WaitForSeconds(0.5f);
+	//	dm.StartDialogue(dialogue, NPCImage, this.gameObject);
+		dm.StartDialogue(curDialogue, NPCImage, this.gameObject);
 	}
 
 	public void ReleaseNPC(){

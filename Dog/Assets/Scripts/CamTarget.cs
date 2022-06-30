@@ -30,9 +30,9 @@ public class CamTarget : MonoBehaviour {
 		targetfocuspos = new Vector3 (0, -6.5f, 0);
 
         Application.targetFrameRate = 60;
-        transform.position = new Vector3(-0.36f, 16, -80);
-        transform.rotation = Quaternion.Euler(-9, 0, 0);
-        targetpos = new Vector3 (-0.36f, 16, -80);
+        transform.position = new Vector3(-0.36f, 20, -80);
+        transform.rotation = Quaternion.Euler(8, 0, 0);
+        targetpos = new Vector3 (-0.36f, 20, -80);
 
     }
 
@@ -88,7 +88,7 @@ public void Awake(){
       //targetpos += touchOffset;
 
       transform.position = Vector3.SmoothDamp(transform.position, targetpos + zoomOffset + touchOffset, ref velocity , 35 * Time.deltaTime) + offsetCamera;
-      transform.rotation = Quaternion.Slerp(transform.rotation, targetrotation, 1.25f * Time.deltaTime);
+      transform.rotation = Quaternion.Slerp(transform.rotation, targetrotation, 1.75f * Time.deltaTime);
 
     }
 
@@ -144,8 +144,8 @@ public void Awake(){
         }
 
         if(cameraMode == 3){
-          targetpos = new Vector3 (-0.36f, 16, -80);
-          targetrotation = Quaternion.Euler (-9, 0, 0);
+          targetpos = new Vector3 (-0.36f, 20, -80);
+          targetrotation = Quaternion.Euler (8, 0, 0);
         }
 
         yield return new WaitForSeconds(0.1f);

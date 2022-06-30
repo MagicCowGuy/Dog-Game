@@ -90,6 +90,10 @@ public class NPC_Cat : MonoBehaviour
       }
     }
 
+    public void SetupNPC(){
+      //Space to setup NPC after spawn point is assigned
+    }
+
     IEnumerator hangAbout() {
 
       while(isHangingOut){

@@ -159,6 +159,7 @@ MonoBehaviour:
   gameControlObj: {fileID: 0}
   spawnPoints:
   - {x: 50, y: -2.47, z: -18.5}
+  - {x: -50, y: -2.47, z: -18.5}
   holdforplayer: 0
 --- !u!195 &410615087930866649
 NavMeshAgent:

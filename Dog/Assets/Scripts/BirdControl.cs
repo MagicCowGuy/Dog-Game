@@ -18,10 +18,10 @@ public class BirdControl : MonoBehaviour
       int birdsSinceSave = (int) Mathf.Floor(timeLapsed / 5);
       birdCount = PlayerPrefs.GetInt("birdCount") + birdsSinceSave;
       birdCount = Mathf.Clamp(birdCount, 0, maxBirds);
-      print("It's been " + timeLapsed + " seconds since las save, when you had " + PlayerPrefs.GetInt("birdCount") + " birds already.");
+      //print("It's been " + timeLapsed + " seconds since las save, when you had " + PlayerPrefs.GetInt("birdCount") + " birds already.");
       //birdCount =  , 0 , maxBirds);
-      print("SPAWN " + birdCount + " Birds now on the ground." );
-      print("TESTING BIRD THING");
+      //print("SPAWN " + birdCount + " Birds now on the ground." );
+      //print("TESTING BIRD THING");
       FastPopulate(birdCount);
       birdDelay = Random.Range(125,280);
     }
@@ -46,7 +46,7 @@ public class BirdControl : MonoBehaviour
           Vector3 RdmSpawnPos = new Vector3(Random.Range(-19,16), 2.5f, Random.Range(-10,1));
           GameObject birdspawn = (GameObject)Instantiate (birdPrefab, RdmSpawnPos, Quaternion.Euler (0, 0, 0));
           birdspawn.GetComponent<BirdAI>().playerTransform = playerObj.transform;
-          print("Spawning Bird!");
+          //print("Spawning Bird!");
         }
     }
 

@@ -14,5 +14,5 @@ public class PickupProperties : ScriptableObject {
 	public bool eatable;
 	public bool droppable;
 	public bool destroyable;
-
+	public bool throwable;
 }

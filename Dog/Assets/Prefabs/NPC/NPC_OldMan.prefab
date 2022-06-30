@@ -101,6 +101,7 @@ GameObject:
   - component: {fileID: 4483278532309031216}
   - component: {fileID: 4483278532309031217}
   - component: {fileID: 4483278532309031218}
+  - component: {fileID: 1906191458149559484}
   m_Layer: 16
   m_Name: NPC_OldMan
   m_TagString: NPC
@@ -132,7 +133,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4483278532309032650}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1934b352a2bda86479e753b06b21d977, type: 3}
   m_Name: 
@@ -145,6 +146,8 @@ MonoBehaviour:
   heldPickup: {fileID: 0}
   leftHand: {fileID: 6938144813970456028}
   gameControlObj: {fileID: 0}
+  seats: []
+  dirFactor: 0
 --- !u!195 &4483278532309032651
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -218,7 +221,8 @@ MonoBehaviour:
     type: 3}
   gameControlObj: {fileID: 0}
   spawnPoints:
-  - {x: -50, y: -2.47, z: -18.5}
+  - {x: -45, y: -2.47, z: -21.5}
+  - {x: 45, y: -2.47, z: -21.5}
   holdforplayer: 0
 --- !u!136 &4483278532309031216
 CapsuleCollider:
@@ -269,6 +273,23 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 2.5, z: 0}
   m_TimeToStationary: 0.5
+--- !u!114 &1906191458149559484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4483278532309032650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae24d75f84e73745bcb1d0f1e425899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  holdforplayer: 0
+  leftHand: {fileID: 6938144813970456028}
+  MobStatus: 3
+  dirFactor: 0
+  targetPickup: {fileID: 0}
 --- !u!1001 &4483278531353801903
 PrefabInstance:
   m_ObjectHideFlags: 0

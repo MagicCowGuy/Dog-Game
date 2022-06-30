@@ -12,6 +12,7 @@ TagManager:
   - Interactable
   - NPC
   - Task
+  - NPC_Seat
   layers:
   - Default
   - TransparentFX

@@ -39,6 +39,10 @@ public class NPC_Postman : MonoBehaviour
 
     }
 
+    public void SetupNPC(){
+      //Space to setup NPC after spawn point is assigned
+    }
+
     public void PauseOrderNPC(){
       holdforplayer = true;
       postNavMeshA.ResetPath();

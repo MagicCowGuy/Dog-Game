@@ -50,8 +50,10 @@ public class TouchMovement : MonoBehaviour
   //private float grabDistance = 2;
   //private bool pickupClicked = false;
   public GameObject targetObject;
+  public GameObject holdingObj;
   //private Transform targetedPickup;
   private bool holdingPickup;
+  private bool pickupThrowable = false;
   private float throwVelocity;
   private Vector3 distanceFromTarget;
 
@@ -111,6 +113,7 @@ public class TouchMovement : MonoBehaviour
       if (moveable && !uIClick && !zoomPanMode && Input.GetMouseButton(0)){
         rotationtimer += Time.deltaTime;
         if (!rotating && rotationtimer > 0.5f && navMeshAgent.velocity.magnitude < 0.1f) {
+          targetObject = null;
           rotating = true;
           anim.SetBool ("Rotating", true);
         }
@@ -124,10 +127,15 @@ public class TouchMovement : MonoBehaviour
             WorldRaycast();
         }
 
-        if(holdingPickup && throwVelocity > 4){
+        if(pickupThrowable && throwVelocity > 4){
           anim.SetTrigger ("Throw");
           print ("Throw " + throwVelocity);
         }
+
+        if(holdingObj != null && holdingObj.GetComponent<pickup>().playerUsing){
+          holdingObj.GetComponent<pickup>().playerUseStop();
+        }
+
         rotating = false;
         rotationtimer = 0;
         uIClick = false;
@@ -163,8 +171,10 @@ public class TouchMovement : MonoBehaviour
           DropEverything();
           if(Vector3.Distance(navMeshAgent.destination, headObject.transform.position)< 2.6f && !jumping && !interacting){
             print("PICKUP");
-            targetObject.gameObject.GetComponent<PickupControl>().PlayerPickup(headObject);
+            targetObject.gameObject.GetComponent<pickup>().PlayerPickup(headObject);
             anim.SetTrigger ("Pickup");
+            holdingObj = targetObject;
+            pickupThrowable = holdingObj.GetComponent<pickup>().throwable;
             targetObject = null;
             holdingPickup = true;
           }
@@ -266,11 +276,19 @@ public class TouchMovement : MonoBehaviour
           throwVelocity = Mathf.Clamp (throwVelocity, 0, 14.5f);
           ThrowDisplay.transform.localScale = new Vector3 (5, 8, throwVelocity * 0.77f);
           if (throwVelocity > 4) {
+            if(pickupThrowable){
               ThrowRender.enabled = true;
-              //ThrowRenderUnderside.enabled = true;
-            } else {
-              ThrowRender.enabled = false;
-              //ThrowRenderUnderside.enabled = false;
+            }
+            if(!holdingObj.GetComponent<pickup>().playerUsing){
+              holdingObj.GetComponent<pickup>().playerUseStart();
+            }
+            holdingObj.GetComponent<pickup>().playerForce = throwVelocity;
+          } else {
+            ThrowRender.enabled = false;
+            if(holdingObj.GetComponent<pickup>().playerUsing){
+              holdingObj.GetComponent<pickup>().playerUseStop();
+            }
+            holdingObj.GetComponent<pickup>().playerForce = 0;
           }
         }
 
@@ -386,7 +404,7 @@ public class TouchMovement : MonoBehaviour
 
     IEnumerator CalcPathObtoOb(GameObject CurrentObj, GameObject destObj, bool isPickup)
     {
-      if(Vector3.Distance(currentInteractable.transform.position, targetObject.transform.position) < 7){
+      if(targetObject.tag == "Interactable" && Vector3.Distance(currentInteractable.transform.position, targetObject.transform.position) < 7){
         print("JUMP DIRECT");
         PlayerJump(targetObject.transform.position + targetObject.GetComponent<Interactable>().posoffset,false,false);
         yield break;
@@ -519,11 +537,17 @@ public class TouchMovement : MonoBehaviour
       {
         if (child.tag == "Pickup")
         {
-          child.gameObject.GetComponent<PickupControl>().PlayerDrop (navMeshAgent.velocity + navMeshAgent.transform.forward * 1.5f);
+          child.gameObject.GetComponent<pickup>().PlayerDrop (navMeshAgent.velocity + navMeshAgent.transform.forward * 1.5f);
         }
       }
       anim.SetTrigger ("Drop");
+      if(holdingObj.GetComponent<pickup>().playerUsing){
+        holdingObj.GetComponent<pickup>().playerUseStop();
+      }
+
+      holdingObj = null;
       holdingPickup = false;
+      pickupThrowable = false;
     }
 
     public void ThrowEverything () {
@@ -533,7 +557,7 @@ public class TouchMovement : MonoBehaviour
         if (child.tag == "Pickup")
         {
           print(throwVelocity);
-          child.gameObject.GetComponent<PickupControl> ().PlayerDrop (navMeshAgent.transform.forward * throwVelocity * 1.25f + Vector3.up * 22f);
+          child.gameObject.GetComponent<pickup> ().PlayerDrop (navMeshAgent.transform.forward * throwVelocity * 1.25f + Vector3.up * 22f);
         }
       }
       holdingPickup = false;

@@ -73,6 +73,10 @@ public class NPC_QueenBee : MonoBehaviour
       //transform.Rotate(0,yAngle,0,Space.Self);
     }
 
+    public void SetupNPC(){
+      //Space to setup NPC after spawn point is assigned
+    }
+
     public void PauseOrderNPC(){
       print("BEE PAUSUING");
       StopCoroutine("flyAbout");

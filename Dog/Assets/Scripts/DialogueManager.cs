@@ -36,25 +36,27 @@ public class DialogueManager : MonoBehaviour {
 			}
 	}
 
-	public void StartDialogue (Dialogue dialogue, Sprite convoImage, GameObject NPCobj){
+	public void StartDialogue (DialogueThread dialogue, Sprite convoImage, GameObject NPCobj){
 		menuPannel.menuHide();
 		dialoguePannel.SetActive(true);
 		opendialogue = true;
 		blackoutPannel.SetActive(true);
 		currentNPC = NPCobj.GetComponent<NPC>();
-		Debug.Log("Starting conversation");
+		//Debug.Log("Starting conversation");
 		NPCchatimage.sprite = convoImage;
 		//textName.text = dialogue.name;
 		sentences.Clear();
 		names.Clear();
 
-		foreach (string sentence in dialogue.sentences) {
-			sentences.Enqueue(sentence);
+		foreach (DialogueLine dLine in dialogue.dialogueThread) {
+			sentences.Enqueue(dLine.diaLine);
+			//print("Adding line: " + dLine.diaLine);
+			names.Enqueue(dLine.diaSpeaker.ToString());
 		}
 
-		foreach (string name in dialogue.names) {
-			names.Enqueue(name);
-		}
+//		foreach (string name in dialogue.names) {
+//			names.Enqueue(name);
+//		}
 
 		//DisplayNextName();
 		DisplayNextSentence();
