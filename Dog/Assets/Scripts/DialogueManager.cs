@@ -11,6 +11,8 @@ public class DialogueManager : MonoBehaviour {
 	public GameObject blackoutPannel;
 	public GameObject QuestCardsPannel;
 	public QuestControl QuestControlScript;
+	public TaskControl taskControlScript;
+
 	public TextMeshProUGUI textName;
 	public TextMeshProUGUI textDialogue;
 	public Image playerchatimage;
@@ -19,6 +21,7 @@ public class DialogueManager : MonoBehaviour {
 	private bool opendialogue = false;
 
 	public GameObject QuestCardPrefab;
+	public DialogueThread curDiaThread;
 
 	Queue<string> sentences;
 	Queue<string> names;
@@ -37,11 +40,13 @@ public class DialogueManager : MonoBehaviour {
 	}
 
 	public void StartDialogue (DialogueThread dialogue, Sprite convoImage, GameObject NPCobj){
+		curDiaThread = dialogue;
 		menuPannel.menuHide();
 		dialoguePannel.SetActive(true);
 		opendialogue = true;
 		blackoutPannel.SetActive(true);
 		currentNPC = NPCobj.GetComponent<NPC>();
+		this.GetComponent<SmallTalk_Control>().shutDownST();
 		//Debug.Log("Starting conversation");
 		NPCchatimage.sprite = convoImage;
 		//textName.text = dialogue.name;
@@ -65,13 +70,19 @@ public class DialogueManager : MonoBehaviour {
 	public void DisplayNextSentence (){
 		if (sentences.Count == 0){
 			EndDialogue();
-			if(currentNPC.QuestToOffer.Length > 0){
+			if(curDiaThread.TaskUnlock.Length > 0){
+				taskControlScript.showTaskUnlock(curDiaThread.TaskUnlock[0]);
+			}
+			if(curDiaThread.QuestToOffer.Length > 0){
+//			if(currentNPC.QuestToOffer.Length > 0){
 				QuestControlScript.OfferQuests();
 				PopulateQuestList();
-			}else{
+			}
+			if(curDiaThread.TaskUnlock.Length == 0 && curDiaThread.QuestToOffer.Length == 0){
 				blackoutPannel.SetActive(false);
 				menuPannel.menuShow();
 				//NPC.GetComponent<NPC>().ReleaseNPC();
+				currentNPC.GetComponent<NPC>().ReleaseNPC();
 			}
 			return;
 		}
@@ -121,7 +132,7 @@ public class DialogueManager : MonoBehaviour {
 		int cardcount = currentNPC.QuestToOffer.Length;
 		int cardSpacing = 280;
 
-		foreach (Quest quest in currentNPC.QuestToOffer){
+		foreach (Quest quest in curDiaThread.QuestToOffer){
 			print(quest.name);
 			GameObject displayQuestCard = Instantiate (QuestCardPrefab, QuestCardsPannel.transform);
 			displayQuestCard.GetComponent<QuestCardSetup>().SetupCard(quest,0);

@@ -26,6 +26,10 @@ public class NPC_Control : MonoBehaviour
 
     }
 
+    public void StartSpawning(){
+      StartCoroutine(SpawnCheckCoRo());
+    }
+
     public void DespawnMob (GameObject MobToDespawn){
       print("Despawning this NPC - " + MobToDespawn);
       NPCPrefabRollCall[MobToDespawn.GetComponent<NPC>().MobCodeNo] = false;

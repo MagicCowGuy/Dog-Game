@@ -22,6 +22,7 @@ public class expandMenu : MonoBehaviour
     public AchievementsControl achievementscontrolscript;
     public QuestControl questcontrolscript;
     public GameManager gamemanagerscript;
+    public TaskControl taskControlScript;
 
     public GameObject[] menuitem;
 
@@ -83,6 +84,9 @@ public class expandMenu : MonoBehaviour
       }
       if(selectedItem == 3){
           gamemanagerscript.ShowMenu();
+      }
+      if(selectedItem == 4){
+          taskControlScript.OpenTaskList();
       }
     }
 

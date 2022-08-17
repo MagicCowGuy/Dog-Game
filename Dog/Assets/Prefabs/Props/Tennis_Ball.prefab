@@ -46,9 +46,9 @@ GameObject:
   - component: {fileID: 23854729451673810}
   - component: {fileID: 135282933503318108}
   - component: {fileID: 54328628706712328}
-  - component: {fileID: -8004121000069607289}
   - component: {fileID: 1585218849}
   - component: {fileID: 2082776286}
+  - component: {fileID: 6051981564978676981}
   m_Layer: 10
   m_Name: Tennis_Ball
   m_TagString: Pickup
@@ -151,7 +151,55 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!82 &-8004121000069607289
+--- !u!114 &1585218849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641540311599442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da836ac9e22605d41bac31ff4e6d2c8e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LeftHandSide: {fileID: 5715486763453483765}
+  RightHandSide: {fileID: 1104401426230879491}
+  Middle: {fileID: 0}
+  shineGroup: {fileID: 832334452}
+--- !u!114 &2082776286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1641540311599442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df9e3dad176fbdf498a42a45b5d93110, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pickedUp: 0
+  throwable: 0
+  targetPoints: []
+  playerForce: 0
+  playerUsing: 0
+  playerUseEffect: {fileID: 0}
+  properties: {fileID: 11400000, guid: d4b1a9575c35cad48bbeb5fd2b0fa86d, type: 2}
+  killEffect: {fileID: 0}
+  RewardObject: {fileID: 0}
+  targetAreaEffect: {fileID: 0}
+  objTargetOutline: {fileID: 0}
+  RewardAmount: 0
+  AchCode: 0
+  AchIncrement: 0
+  QuestCode: 0
+  QuestIncrement: 0
+  locpos: {x: 0, y: 0.15, z: 1.25}
+  locrot: {x: 0, y: 0, z: 0}
+  soundImpact: {fileID: 8300000, guid: 117908504091061408492353839f12cd, type: 3}
+  soundThrow: {fileID: 8300000, guid: 4f1d1e0faabcfeb468bef9d2b82630c0, type: 3}
+--- !u!82 &6051981564978676981
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -162,17 +210,17 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 0.1
-  m_Pitch: 1
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1.1382402
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 6.14
+  MaxDistance: 80
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -207,7 +255,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -216,13 +264,13 @@ AudioSource:
       outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   spreadCustomCurve:
     serializedVersion: 2
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.25
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -231,7 +279,7 @@ AudioSource:
       outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -246,50 +294,7 @@ AudioSource:
       outWeight: 0.33333334
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &1585218849
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1641540311599442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da836ac9e22605d41bac31ff4e6d2c8e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  LeftHandSide: {fileID: 5715486763453483765}
-  RightHandSide: {fileID: 1104401426230879491}
-  Middle: {fileID: 0}
-  shineGroup: {fileID: 832334452}
---- !u!114 &2082776286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1641540311599442}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df9e3dad176fbdf498a42a45b5d93110, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pickedUp: 0
-  targetPoints: []
-  properties: {fileID: 11400000, guid: d4b1a9575c35cad48bbeb5fd2b0fa86d, type: 2}
-  killEffect: {fileID: 0}
-  RewardObject: {fileID: 0}
-  targetAreaEffect: {fileID: 0}
-  RewardAmount: 0
-  AchCode: 0
-  AchIncrement: 0
-  QuestCode: 0
-  QuestIncrement: 0
-  locpos: {x: 0, y: 0.15, z: 1.25}
-  locrot: {x: 0, y: 0, z: 0}
-  soundImpact: {fileID: 8300000, guid: 117908504091061408492353839f12cd, type: 3}
-  soundThrow: {fileID: 8300000, guid: 4f1d1e0faabcfeb468bef9d2b82630c0, type: 3}
+    m_RotationOrder: 0
 --- !u!1001 &1474099833
 PrefabInstance:
   m_ObjectHideFlags: 0

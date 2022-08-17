@@ -7,5 +7,5 @@ using System;
 public class ProgressStatus {
   public string StatusDesciption;
   public DialogueThread diaThread;
-  public SmallTalkThread stThread;
+  public SmallTalkThread[] stThreads;
 }

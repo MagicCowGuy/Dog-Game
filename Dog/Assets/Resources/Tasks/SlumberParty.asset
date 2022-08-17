@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1b73ec6a437b0429c63e051fa14b1a, type: 3}
+  m_Name: SlumberParty
+  m_EditorClassIdentifier: 
+  taskCode: 8
+  taskName: Slumber Party
+  taskDes: Leave a vacant bed out for the cat.
+  GuideDes: 
+  taskIcon: {fileID: -107208025, guid: 621c32704186248928072854c85ae9da, type: 3}
+  supportImages: []
+  unlocked: 0
+  unlockReq: []
+  rewardAmount: 0
+  completed: 0
+  targetCount: 0
+  progressCount: 0
+  dailyRefresh: 1
+  hoursCooldown: 0
+  timeToReset: 0

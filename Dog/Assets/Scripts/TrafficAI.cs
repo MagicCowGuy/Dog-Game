@@ -25,8 +25,10 @@ public class TrafficAI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      foreach(Transform wheel in wheels){
-        wheel.Rotate(0,0,10);
+      if(wheels != null){
+        foreach(Transform wheel in wheels){
+          wheel.Rotate(0,0,10);
+        }
       }
       //bodyOffsetPos.z = Mathf.Sin(rdmOffset.z + Time.time * 15) * 0.03f;
       bodyOffsetPos.y = Mathf.Cos(rdmOffset.y + Time.time * 16) * 0.02f;

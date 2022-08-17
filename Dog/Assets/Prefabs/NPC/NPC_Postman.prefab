@@ -278,6 +278,7 @@ GameObject:
   - component: {fileID: 9024574227724708113}
   - component: {fileID: 9024574227724708114}
   - component: {fileID: 9024574227724708110}
+  - component: {fileID: 7955815771854199143}
   m_Layer: 16
   m_Name: NPC_Postman
   m_TagString: NPC
@@ -442,7 +443,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5798d46afbcf54ef79e559920fdfbd0b, type: 2}
   NPCImage: {fileID: 21300000, guid: 217d639c67bc16b46a8092bb4ae6b503, type: 3}
   QuestSprite: {fileID: 9024574227536605429}
-  QuestSpriteLockObject: {fileID: 236873859234868961}
   headObject: {fileID: 236873859234868961}
   EmoteEffect: {fileID: 1043613085120086, guid: dda15df5973e64145b37cb411ee869ab,
     type: 3}
@@ -450,6 +450,32 @@ MonoBehaviour:
   spawnPoints:
   - {x: -50, y: -2.47, z: -19}
   holdforplayer: 0
+  curProgChapter: 0
+  curProgSubChapter: 0
+  curDialogue: {fileID: 0}
+  curSmallTalk: []
+  progStat: {fileID: 7955815771854199143}
+  talkingHappy: []
+--- !u!114 &7955815771854199143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016783704858300132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87615615e7379e946bf5126aab4c1acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressionArray:
+  - ChapterDescription: Intro
+    progressStatus:
+    - StatusDesciption: Introduction to help postie
+      diaThread: {fileID: 11400000, guid: 5ea840d8a90fe2c43baf8d8870737108, type: 2}
+      stThreads:
+      - {fileID: 11400000, guid: 8338e30acd7e52340ad7c7da1d38fc0e, type: 2}
+      - {fileID: 11400000, guid: 0319c7bd5b564e64e8c3b838a9240cb0, type: 2}
 --- !u!1 &1160815647625320781
 GameObject:
   m_ObjectHideFlags: 0
@@ -2057,6 +2083,6 @@ SpriteRenderer:
   m_Size: {x: 1.28, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0

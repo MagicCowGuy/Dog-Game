@@ -593,7 +593,7 @@ public class TouchMovement : MonoBehaviour
 		{
 				//GetComponent<AudioSource>().volume = 0.3f + Random.Range(-0.05f, 0.05f);
 				//GetComponent<AudioSource>().pitch = 1.1f + Random.Range(-0.1f,0.1f);
-				GetComponent<AudioSource>().PlayOneShot(stepsound, 2);
+				GetComponent<AudioSource>().PlayOneShot(stepsound, 1);
 		}
 
     public void publicSound(float soundVolume, AudioClip soundFile){

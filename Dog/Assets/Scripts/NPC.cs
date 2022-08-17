@@ -15,7 +15,6 @@ public class NPC : MonoBehaviour {
 	public Quest[] QuestToOffer;
 	public Sprite NPCImage;
 	public GameObject QuestSprite;
-	public GameObject QuestSpriteLockObject;
 	private float rndoffset;
 	private Vector3 posoffset;
 
@@ -32,17 +31,14 @@ public class NPC : MonoBehaviour {
 	public int curProgChapter;
 	public int curProgSubChapter;
 	public DialogueThread curDialogue;
-	public SmallTalkThread curSmallTalk;
+	public SmallTalkThread[] curSmallTalk;
 	public NPC_Progression progStat;
 
+	public AudioClip[] talkingHappy;
+
+
 	public void Start() {
-		if(QuestSpriteLockObject == null){
-			QuestSpriteLockObject = this.gameObject;
-		}
-		if(QuestToOffer.Length > 0){
-			QuestSprite.GetComponent<SpriteRenderer>().enabled = true;
-			posoffset = QuestSprite.transform.position - QuestSpriteLockObject.transform.position;
-		}
+
 		rndoffset = Random.Range (0.0f, 1.0f);
 		dm = gameControlObj.GetComponent<DialogueManager>();
 		progStat = this.GetComponent<NPC_Progression>();
@@ -55,8 +51,8 @@ public class NPC : MonoBehaviour {
 		curProgSubChapter = newSubCap;
 		curDialogue = progStat.progressionArray[newChap].progressStatus[newSubCap].diaThread;
 
-		if(progStat.progressionArray[newChap].progressStatus[newSubCap].stThread != null){
-			curSmallTalk = progStat.progressionArray[newChap].progressStatus[newSubCap].stThread;
+		if(progStat.progressionArray[newChap].progressStatus[newSubCap].stThreads != null){
+			curSmallTalk = progStat.progressionArray[newChap].progressStatus[newSubCap].stThreads;
 		}
 
 		gameObject.SendMessage("updateWatcher");
@@ -71,18 +67,14 @@ public class NPC : MonoBehaviour {
 	}
 
 	public void Update() {
-		if (QuestSprite != null){
-		//QuestSprite.transform.localPosition = new Vector3(QuestSprite.transform.localPosition.x, 2.75f + Mathf.Sin((Time.time + rndoffset) * 6 ) * 0.25f, QuestSprite.transform.localPosition.z);
-		QuestSprite.transform.position = QuestSpriteLockObject.transform.position + posoffset + new Vector3(0, Mathf.Sin((Time.time + rndoffset) * 3 ) * 0.25f, 0);
-		QuestSprite.transform.LookAt (Camera.main.transform.position);
-		//ShadowObject.transform.eulerAngles = new Vector3(90, QuestSprite.transform.eulerAngles.y, 0);
-		}
+
 
 	}
 
 
 	public void emoteChat (){
 		holdforplayer = true;
+		this.SendMessage("TalkTrigger");
 		GameObject emoteclone = Instantiate (EmoteEffect, headObject.transform.position, Quaternion.LookRotation(Vector3.forward));
 		emoteclone.transform.SetParent (headObject.transform);
 		emoteclone.transform.localPosition = new Vector3 (0, 0.85f, 1.25f);
@@ -102,6 +94,7 @@ public class NPC : MonoBehaviour {
 		yield return new WaitForSeconds(0.5f);
 	//	dm.StartDialogue(dialogue, NPCImage, this.gameObject);
 		dm.StartDialogue(curDialogue, NPCImage, this.gameObject);
+		yield break;
 	}
 
 	public void ReleaseNPC(){

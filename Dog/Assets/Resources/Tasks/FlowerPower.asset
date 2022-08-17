@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d1b73ec6a437b0429c63e051fa14b1a, type: 3}
+  m_Name: FlowerPower
+  m_EditorClassIdentifier: 
+  taskCode: 4
+  taskName: Flower Power
+  taskDes: Water some of the plants in the front yard.
+  GuideDes: 
+  taskIcon: {fileID: 21300000, guid: 2be566f1f1eadf047bb3726b3e9f8d6c, type: 3}
+  supportImages: []
+  unlocked: 0
+  unlockReq: []
+  rewardAmount: 100
+  completed: 0
+  targetCount: 5
+  progressCount: 0
+  dailyRefresh: 0
+  hoursCooldown: 0
+  timeToReset: 0

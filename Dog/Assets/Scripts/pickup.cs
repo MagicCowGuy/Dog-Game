@@ -25,6 +25,7 @@ public class pickup : MonoBehaviour
   private GameObject parForEffect;
   public GameObject objTargetOutline;
 
+  public string IDTag;
   public int RewardAmount;
 
   public int AchCode;

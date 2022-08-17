@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 8e2f14de661c449a9a0e0d36310f741e
 ModelImporter:
-  serializedVersion: 20101
+  serializedVersion: 21300
   internalIDToNameTable:
   - first:
       1: 100000
@@ -325,6 +325,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 0
     optimizeGameObjects: 0
+    removeConstantScaleCurves: 0
     motionNodeName: Corgi_Armature/body_control
     rigImportErrors: 
     rigImportWarnings: 
@@ -2222,6 +2223,7 @@ ModelImporter:
     importBlendShapes: 1
     importCameras: 0
     importLights: 0
+    nodeNameCollisionStrategy: 0
     fileIdsGeneration: 1
     swapUVChannels: 0
     generateSecondaryUV: 0
@@ -2233,7 +2235,8 @@ ModelImporter:
     skinWeightsMode: 1
     maxBonesPerVertex: 14
     minBoneWeight: 0.001
-    meshOptimizationFlags: 1
+    optimizeBones: 1
+    meshOptimizationFlags: -1
     indexFormat: 1
     secondaryUVAngleDistortion: 8
     secondaryUVAreaDistortion: 15.000001
@@ -2274,6 +2277,8 @@ ModelImporter:
   animationType: 2
   humanoidOversampling: 1
   avatarSetup: 1
+  addHumanoidExtraRootOnlyWhenUsingAvatar: 0
+  remapMaterialsIfMaterialImportModeIsNone: 1
   additionalBone: 0
   userData: 
   assetBundleName: 
