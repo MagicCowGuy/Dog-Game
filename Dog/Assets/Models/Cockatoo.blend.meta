@@ -138,7 +138,7 @@ ModelImporter:
       name: Cocky_Fly
       takeName: Scene
       internalID: 0
-      firstFrame: 125
+      firstFrame: 126
       lastFrame: 170
       wrapMode: 0
       orientationOffsetY: 0
@@ -146,7 +146,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 1
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0

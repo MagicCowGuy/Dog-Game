@@ -256,6 +256,8 @@ public class NPC_TutorBird_Progress : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
       }
 
+      tbNPC.StartCoroutine("FlyAway");
+      gameControlObj.GetComponent<AchievementsControl>().AchievementUpdate (0, 1);
       stCont.startMonoThread(this.gameObject, NPCScript.curSmallTalk[0]);
       gameControlObj.GetComponent<NPC_Control>().StartSpawning();
       yield break;

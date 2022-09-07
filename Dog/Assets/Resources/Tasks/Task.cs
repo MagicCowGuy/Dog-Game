@@ -14,15 +14,15 @@ public class Task : ScriptableObject
   public Sprite taskIcon;
   public Sprite[] supportImages;
 
-  public bool unlocked;
+  //public bool unlocked;
   public string[] unlockReq;
 
   public int rewardAmount;
-  public bool completed;
+  //public bool completed;
   public int targetCount;
-  public int progressCount;
+  //public int progressCount;
 
   public bool dailyRefresh;
   public float hoursCooldown;
-  public float timeToReset;
+  //public float timeToReset;
 }

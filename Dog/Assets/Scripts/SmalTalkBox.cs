@@ -80,14 +80,22 @@ public class SmalTalkBox : MonoBehaviour
       if(NPCPosUI.x < PlayerPosUI.x){
         myRT.pivot = new Vector2(1,0);
         PosOffset = new Vector3(-30,-25,0);
+        pointerRect.anchorMax = new Vector2(1,0.5f);
+        pointerRect.anchorMin = new Vector2(1,0.5f);
+        pointerRect.anchoredPosition = new Vector2(-10,0);
+        pointerRect.rotation = Quaternion.Euler(0,0,90);
       } else {
         myRT.pivot = new Vector2(0,0);
         PosOffset = new Vector3(30,-25,0);
+        pointerRect.anchorMax = new Vector2(0,0.5f);
+        pointerRect.anchorMin = new Vector2(0,0.5f);
+        pointerRect.anchoredPosition = new Vector2(10,0);
+        pointerRect.rotation = Quaternion.Euler(0,0,-90);
       }
       //pointerRect.localPosition = Vector3.zero;
       LayoutRebuilder.ForceRebuildLayoutImmediate(myRT);
 
-      pointerRect.rotation = Quaternion.LookRotation(Vector3.forward, pointerRect.position - NPCPosUI);
+      //pointerRect.rotation = Quaternion.LookRotation(Vector3.forward, pointerRect.position - NPCPosUI);
 
     }
 

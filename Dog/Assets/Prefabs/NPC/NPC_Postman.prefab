@@ -271,13 +271,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4055226192686152951}
+  - component: {fileID: 9024574227724708110}
   - component: {fileID: 9024574227724708115}
   - component: {fileID: 9024574227724708108}
   - component: {fileID: 9024574227724708119}
   - component: {fileID: 9024574227724708112}
   - component: {fileID: 9024574227724708113}
   - component: {fileID: 9024574227724708114}
-  - component: {fileID: 9024574227724708110}
   - component: {fileID: 7955815771854199143}
   m_Layer: 16
   m_Name: NPC_Postman
@@ -307,6 +307,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!114 &9024574227724708110
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016783704858300132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc21c2b16c523b5418bd3d39665cf671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MobCodeNo: 3
+  dialogue:
+    names:
+    - Postman
+    sentences:
+    - Hey little one, would you help me by taking this to your door?
+  dm: {fileID: 0}
+  QuestToOffer: []
+  NPCImage: {fileID: 21300000, guid: 217d639c67bc16b46a8092bb4ae6b503, type: 3}
+  QuestSprite: {fileID: 9024574227536605429}
+  headObject: {fileID: 236873859234868961}
+  EmoteEffect: {fileID: 1043613085120086, guid: dda15df5973e64145b37cb411ee869ab,
+    type: 3}
+  gameControlObj: {fileID: 0}
+  spawnPoints:
+  - {x: -50, y: -2.47, z: -19}
+  holdforplayer: 0
+  curProgChapter: 0
+  curProgSubChapter: 0
+  curDialogue: {fileID: 0}
+  curSmallTalk: []
+  progStat: {fileID: 7955815771854199143}
+  talkingHappy: []
+  saveCodeNPC: 
 --- !u!136 &9024574227724708115
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -420,42 +456,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &9024574227724708110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1016783704858300132}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc21c2b16c523b5418bd3d39665cf671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MobCodeNo: 0
-  dialogue:
-    names:
-    - Postman
-    sentences:
-    - Hey little one, would you help me by taking this to your door?
-  dm: {fileID: 0}
-  QuestToOffer:
-  - {fileID: 11400000, guid: 5798d46afbcf54ef79e559920fdfbd0b, type: 2}
-  NPCImage: {fileID: 21300000, guid: 217d639c67bc16b46a8092bb4ae6b503, type: 3}
-  QuestSprite: {fileID: 9024574227536605429}
-  headObject: {fileID: 236873859234868961}
-  EmoteEffect: {fileID: 1043613085120086, guid: dda15df5973e64145b37cb411ee869ab,
-    type: 3}
-  gameControlObj: {fileID: 0}
-  spawnPoints:
-  - {x: -50, y: -2.47, z: -19}
-  holdforplayer: 0
-  curProgChapter: 0
-  curProgSubChapter: 0
-  curDialogue: {fileID: 0}
-  curSmallTalk: []
-  progStat: {fileID: 7955815771854199143}
-  talkingHappy: []
 --- !u!114 &7955815771854199143
 MonoBehaviour:
   m_ObjectHideFlags: 0

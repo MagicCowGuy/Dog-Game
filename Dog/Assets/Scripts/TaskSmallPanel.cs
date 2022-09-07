@@ -11,6 +11,10 @@ public class TaskSmallPanel : MonoBehaviour
   public TextMeshProUGUI taskTimeText;
   public Image taskImage;
   public GameObject unlockOverlay;
+  public GameObject completeOverlay;
+
+  public GameObject ProgPanel;
+  public RectTransform ProgFillRT;
 
   public Task taskPrefab;
 
@@ -35,6 +39,27 @@ public class TaskSmallPanel : MonoBehaviour
 
     public void unlock(){
       unlockOverlay.SetActive(false);
+    }
+
+    public void complete(){
+      completeOverlay.SetActive(true);
+      ProgPanel.SetActive(false);
+    }
+
+    public void reset(){
+      completeOverlay.SetActive(false);
+    }
+
+    public void progUpdate(float progRatio){
+      ProgPanel.SetActive(true);
+      print("Progress update to TASK: " + progRatio);
+      ProgFillRT.sizeDelta = new Vector2 ((110 * progRatio), 10);
+    }
+
+    public void timeUpdate(string timeString){
+      taskTimeText.text = timeString;
+      LayoutRebuilder.ForceRebuildLayoutImmediate(taskTimeText.GetComponent<RectTransform>());
+      
     }
 
     public void contentUpdate() {

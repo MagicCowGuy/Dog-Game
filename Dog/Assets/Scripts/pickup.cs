@@ -31,8 +31,8 @@ public class pickup : MonoBehaviour
   public int AchCode;
   public int AchIncrement;
 
-  public int QuestCode;
-  public int QuestIncrement;
+  public int TaskCode;
+  public int TaskProgress;
 
   public Vector3 locpos = new Vector3(-0.25f,0,1);
   public Vector3 locrot = new Vector3 (0, 0, 0);
@@ -149,7 +149,7 @@ public class pickup : MonoBehaviour
       foreach(targetPoint tarpoint in targetPoints){
         if(Vector3.Distance(transform.position,tarpoint.TarPointPos) < tarpoint.TarPointRange){
           gameController.GetComponent<AchievementsControl>().AchievementUpdate (AchCode, AchIncrement);
-  				gameController.GetComponent<QuestControl>().QuestProgress(QuestCode,QuestIncrement);
+  				gameController.GetComponent<TaskControl>().TaskProgress(TaskCode,TaskProgress);
           Instantiate (killEffect, transform.position - new Vector3 (0, -1, 0), Quaternion.Euler (-90, 0, 0));
           for (int i = 0; i < RewardAmount; i++) {
             //spawns rewards evenly spread out

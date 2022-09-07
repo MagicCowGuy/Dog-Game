@@ -105,7 +105,7 @@ public class BirdAI : MonoBehaviour {
 		grounded = false;
 
 		gameControlObj.GetComponent<BirdControl>().birdCount -= 1;
-		gameControlObj.GetComponent<QuestControl>().QuestProgress(1,1);
+		gameControlObj.GetComponent<TaskControl>().TaskProgress(1,1);
 
 		for (int i = 0; i < RewardAmount; i++) {
 			//spawns rewards evenly spread out

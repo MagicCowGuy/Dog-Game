@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc21c2b16c523b5418bd3d39665cf671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MobCodeNo: 0
+  MobCodeNo: 5
   dialogue:
     names: []
     sentences: []
@@ -153,7 +153,6 @@ MonoBehaviour:
   QuestToOffer: []
   NPCImage: {fileID: 0}
   QuestSprite: {fileID: 0}
-  QuestSpriteLockObject: {fileID: 0}
   headObject: {fileID: 0}
   EmoteEffect: {fileID: 0}
   gameControlObj: {fileID: 0}
@@ -161,6 +160,13 @@ MonoBehaviour:
   - {x: 50, y: -2.47, z: -18.5}
   - {x: -50, y: -2.47, z: -18.5}
   holdforplayer: 0
+  curProgChapter: 0
+  curProgSubChapter: 0
+  curDialogue: {fileID: 0}
+  curSmallTalk: []
+  progStat: {fileID: 0}
+  talkingHappy: []
+  saveCodeNPC: 
 --- !u!195 &410615087930866649
 NavMeshAgent:
   m_ObjectHideFlags: 0

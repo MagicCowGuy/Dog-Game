@@ -5,19 +5,29 @@ using UnityEngine;
 public class NPC_Control : MonoBehaviour
 {
 
-  public GameObject[] NPCPrefabIndex;
-  public bool[] NPCPrefabRollCall;
+  public List<GameObject> NPCCommonPool;
+  public List<GameObject> NPCUncommonPool;
+  public float cooldownUncom;
+  public List<GameObject> NPCRarePool;
+  public float cooldownRare;
+
+  public List<GameObject> CurPrefabs;
+  public List<GameObject> CurClones;
+
+  private List<GameObject> tempSpawnPool;
+  private GameObject tempSpwanPrefab;
+
   public int maxMobCount = 5;
+
   public bool spawning = true;
+
   public int CurMobCount;
-  private int TempMobSpawnNo;
+
     // Start is called before the first frame update
     void Start()
     {
-      NPCPrefabRollCall = new bool[NPCPrefabIndex.Length];
-
-      //StartCoroutine(SpawnCheckCoRo());
-
+      //NPCPrefabRollCall = new bool[NPCPrefabIndex.Length];
+      //StartSpawning();
     }
 
     // Update is called once per frame
@@ -32,47 +42,80 @@ public class NPC_Control : MonoBehaviour
 
     public void DespawnMob (GameObject MobToDespawn){
       print("Despawning this NPC - " + MobToDespawn);
-      NPCPrefabRollCall[MobToDespawn.GetComponent<NPC>().MobCodeNo] = false;
+      for (int i = 0; i<CurPrefabs.Count; i++){
+        if(CurPrefabs[i].GetComponent<NPC>().MobCodeNo == MobToDespawn.GetComponent<NPC>().MobCodeNo){
+          CurPrefabs.RemoveAt(i);
+        }
+      }
       Destroy(MobToDespawn);
       CurMobCount --;
     }
 
-    void SpawnMob (int prefabRef){
-      GameObject newNPC = Instantiate (NPCPrefabIndex[prefabRef], new Vector3(0,0,0), Quaternion.LookRotation(Vector3.forward));
-      newNPC.GetComponent<NPC>().MobCodeNo = prefabRef;
+    void SpawnMob (GameObject NPCtoSpawn){
+      GameObject newNPC = Instantiate (NPCtoSpawn, Vector3.zero, Quaternion.LookRotation(Vector3.forward));
       newNPC.GetComponent<NPC>().gameControlObj = this.gameObject;
-      NPCPrefabRollCall[prefabRef] = true;
-
+      //NPCPrefabRollCall[prefabRef] = true;
       newNPC.GetComponent<NPC>().SpawnSetup();
+      CurPrefabs.Add(NPCtoSpawn);
+      CurClones.Add(newNPC);
+    }
+
+    private void buildSpawnPool(){
+        
     }
 
     IEnumerator SpawnCheckCoRo(){
-        while(true){
 
-          bool AllTrue=true;
-          for(int loop=0; loop<NPCPrefabRollCall.Length;++loop) {
-            if(NPCPrefabRollCall[loop] == false) {
-              AllTrue = false;
-              break;
-            }
-          }
+      while(true){
+        print("Spawn NPC");
+        //buildSpawnPool();
 
-          if(AllTrue){print("THERES NO NPCS LEFT!!");}
+        //clear pool
+        tempSpawnPool = new List<GameObject>();
+        tempSpwanPrefab = null;
 
-          if(CurMobCount < maxMobCount && AllTrue == false){
-            TempMobSpawnNo = Random.Range(0, NPCPrefabIndex.Length);
-          while (NPCPrefabRollCall[TempMobSpawnNo] == true){
-            //print("NPC Count is " + TempMobSpawnNo);
-            TempMobSpawnNo = Random.Range(0, NPCPrefabIndex.Length);
-          }
-
-
-          SpawnMob(TempMobSpawnNo);
-          CurMobCount ++;
+        //add common, uncommon and rares providing their cooldown is reached.
+        for (int i = 0; i<NPCCommonPool.Count; i++){
+          tempSpawnPool.Add(NPCCommonPool[i]);
         }
-          //check if there are too many NPCs and spawn
-          yield return new WaitForSeconds(5);
-       }
+
+        if(cooldownUncom <= 0){
+          for (int i = 0; i<NPCUncommonPool.Count; i++){
+          tempSpawnPool.Add(NPCUncommonPool[i]);
+          }
+        }
+
+        if(cooldownRare <= 0){
+          for (int i = 0; i<NPCRarePool.Count; i++){
+          tempSpawnPool.Add(NPCRarePool[i]);
+          }
+        }
+
+        //remove any currently spawned NPCs from list.
+        foreach (GameObject NPCprefab in CurPrefabs){
+          if(tempSpawnPool.Contains(NPCprefab)){
+            tempSpawnPool.Remove(NPCprefab);
+          }
+        }
+
+
+        if(tempSpawnPool.Count > 0){
+          tempSpwanPrefab = tempSpawnPool[Random.Range(0,tempSpawnPool.Count)];
+          SpawnMob(tempSpwanPrefab);
+          if(NPCUncommonPool.Contains(tempSpwanPrefab)){
+            cooldownUncom = 20;
+          }
+          if(NPCRarePool.Contains(tempSpwanPrefab)){
+            cooldownRare = 50;
+          }
+        }
+        
+        cooldownUncom -= 1;
+        cooldownRare -= 1;
+        yield return new WaitForSeconds(5);
+      }
+
     }
+
 
 }

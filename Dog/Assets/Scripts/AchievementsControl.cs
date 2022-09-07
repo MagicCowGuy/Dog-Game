@@ -52,8 +52,7 @@ public List <bool> achCompleteList;
 	private void SaveAchData() {
 		saveAchProgressArray = achProgressList.ToArray();
 		PlayerPrefsX.SetIntArray ("AchProgress", saveAchProgressArray);
-    PlayerPrefs.Save();
-
+    	PlayerPrefs.Save();
 	}
 
 	private void PopulateAchievements() {

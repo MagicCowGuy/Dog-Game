@@ -114,8 +114,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3469616995950815440}
-  - component: {fileID: 3469616995950815441}
   - component: {fileID: 3469616995950815442}
+  - component: {fileID: 3469616995950815441}
   - component: {fileID: 3469616995950815447}
   - component: {fileID: 3469616995950815446}
   - component: {fileID: 3469616995950815445}
@@ -146,28 +146,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
---- !u!195 &3469616995950815441
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3469616995950815443}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.5
-  m_Speed: 3.5
-  m_Acceleration: 10
-  avoidancePriority: 50
-  m_AngularSpeed: 180
-  m_StoppingDistance: 5
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 2
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!114 &3469616995950815442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -180,7 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cc21c2b16c523b5418bd3d39665cf671, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MobCodeNo: 0
+  MobCodeNo: 1
   dialogue:
     names:
     - Tutor Bird
@@ -211,6 +189,29 @@ MonoBehaviour:
   - {fileID: 8300000, guid: cc42edb6a692fc44bafa1cb637da4b94, type: 3}
   - {fileID: 8300000, guid: 4c05d63dc3de2bb409bd7093b18449fc, type: 3}
   - {fileID: 8300000, guid: 3cd535831ca99c44fae92676368f49c5, type: 3}
+  saveCodeNPC: 
+--- !u!195 &3469616995950815441
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3469616995950815443}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 10
+  avoidancePriority: 50
+  m_AngularSpeed: 180
+  m_StoppingDistance: 5
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 2
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!114 &3469616995950815447
 MonoBehaviour:
   m_ObjectHideFlags: 0

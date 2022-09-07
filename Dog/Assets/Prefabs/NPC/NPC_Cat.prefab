@@ -81,7 +81,7 @@ SpriteRenderer:
   m_Size: {x: 1.28, y: 1.28}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &1935093430635538328
@@ -93,12 +93,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1935093430635538340}
-  - component: {fileID: 1935093430635538343}
   - component: {fileID: 1935093430635538342}
+  - component: {fileID: 1935093430635538343}
   - component: {fileID: 1935093430635538329}
   - component: {fileID: 1935093430635538341}
   - component: {fileID: 1935093430635538338}
   - component: {fileID: 1935093430635538339}
+  - component: {fileID: 450170467298979004}
   m_Layer: 16
   m_Name: NPC_Cat
   m_TagString: NPC
@@ -123,6 +124,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1935093430635538342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935093430635538328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc21c2b16c523b5418bd3d39665cf671, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MobCodeNo: 4
+  dialogue:
+    names:
+    - Cat
+    - You
+    - Cat
+    sentences:
+    - You there, come over here and choose a task you can do for me.
+    - Woof.
+    - That's what I thought you'd say.
+  dm: {fileID: 0}
+  QuestToOffer:
+  - {fileID: 11400000, guid: e7072a83a77a847bcb8a67e5d0be2abf, type: 2}
+  - {fileID: 11400000, guid: 5798d46afbcf54ef79e559920fdfbd0b, type: 2}
+  - {fileID: 11400000, guid: ab270c2cd4a5e444b800cbbbeab780f1, type: 2}
+  NPCImage: {fileID: 21300000, guid: 0520dc8ebd53842a8bd3624aa1c0bd09, type: 3}
+  QuestSprite: {fileID: 1935093429635331012}
+  headObject: {fileID: 8733012108128577222}
+  EmoteEffect: {fileID: 1043613085120086, guid: dda15df5973e64145b37cb411ee869ab,
+    type: 3}
+  gameControlObj: {fileID: 0}
+  spawnPoints:
+  - {x: -22.603022, y: 24.952965, z: 18.64239}
+  holdforplayer: 0
+  curProgChapter: 0
+  curProgSubChapter: 0
+  curDialogue: {fileID: 0}
+  curSmallTalk: []
+  progStat: {fileID: 0}
+  talkingHappy: []
+  saveCodeNPC: 
 --- !u!195 &1935093430635538343
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -145,43 +189,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1935093430635538342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1935093430635538328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cc21c2b16c523b5418bd3d39665cf671, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MobCodeNo: 0
-  dialogue:
-    names:
-    - Cat
-    - You
-    - Cat
-    sentences:
-    - You there, come over here and choose a task you can do for me.
-    - Woof.
-    - That's what I thought you'd say.
-  dm: {fileID: 0}
-  QuestToOffer:
-  - {fileID: 11400000, guid: e7072a83a77a847bcb8a67e5d0be2abf, type: 2}
-  - {fileID: 11400000, guid: 5798d46afbcf54ef79e559920fdfbd0b, type: 2}
-  - {fileID: 11400000, guid: ab270c2cd4a5e444b800cbbbeab780f1, type: 2}
-  NPCImage: {fileID: 21300000, guid: 0520dc8ebd53842a8bd3624aa1c0bd09, type: 3}
-  QuestSprite: {fileID: 1935093429635331012}
-  QuestSpriteLockObject: {fileID: 8733012108128577222}
-  headObject: {fileID: 8733012108128577222}
-  EmoteEffect: {fileID: 1043613085120086, guid: dda15df5973e64145b37cb411ee869ab,
-    type: 3}
-  gameControlObj: {fileID: 0}
-  spawnPoints:
-  - {x: -22.603022, y: 24.952965, z: 18.64239}
-  holdforplayer: 0
 --- !u!114 &1935093430635538329
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,6 +231,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PathNavPoints: []
   PathEnter:
+  - moveType: 0
+    pathPointPos: {x: -22.1, y: 25, z: 16.6}
   - moveType: 1
     pathPointPos: {x: -22.1, y: 25, z: 16.5}
   - moveType: 0
@@ -302,6 +311,25 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &450170467298979004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1935093430635538328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87615615e7379e946bf5126aab4c1acb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  progressionArray:
+  - ChapterDescription: Into
+    progressStatus:
+    - StatusDesciption: Intro Bird problem
+      diaThread: {fileID: 11400000, guid: cef5e38f846c460478ffb427ebd4c149, type: 2}
+      stThreads:
+      - {fileID: 11400000, guid: e4af9244f5a714340b089a48539e097e, type: 2}
 --- !u!1001 &1935093430292849955
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -26,6 +26,7 @@ Shader "Custom/Outline Fill" {
       Cull Off
       ZTest [_ZTest]
       ZWrite Off
+      Lighting Off
       Blend SrcAlpha OneMinusSrcAlpha
       ColorMask RGB
 
@@ -68,6 +69,7 @@ Shader "Custom/Outline Fill" {
 
         output.position = UnityViewToClipPos(viewPosition + viewNormal * -viewPosition.z * _OutlineWidth / 1000.0);
         output.color = _OutlineColor;
+      
 
         return output;
       }

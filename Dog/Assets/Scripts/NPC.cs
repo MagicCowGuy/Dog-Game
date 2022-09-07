@@ -36,6 +36,8 @@ public class NPC : MonoBehaviour {
 
 	public AudioClip[] talkingHappy;
 
+	public string saveCodeNPC;
+  
 
 	public void Start() {
 
@@ -43,7 +45,7 @@ public class NPC : MonoBehaviour {
 		dm = gameControlObj.GetComponent<DialogueManager>();
 		progStat = this.GetComponent<NPC_Progression>();
 		//later replace with load from save file.
-		ProgressUpdate(0,0);
+		ProgressUpdate(PlayerPrefs.GetInt("NPC_" + MobCodeNo + "_Chapter", 0),PlayerPrefs.GetInt("NPC_" + MobCodeNo + "_SubChapter", 0));
 	}
 
 	public void ProgressUpdate(int newChap, int newSubCap){
@@ -56,13 +58,18 @@ public class NPC : MonoBehaviour {
 		}
 
 		gameObject.SendMessage("updateWatcher");
+
+		PlayerPrefs.SetInt("NPC_" + MobCodeNo + "_Chapter", newChap);
+		PlayerPrefs.SetInt("NPC_" + MobCodeNo + "_SubChapter", newSubCap);
 	}
 
 	public void SpawnSetup(){
 		//Vector3[] posSpawnPoints = newNPC.GetComponent<NPC>().spawnPoints;
     int spawnPointRef = Random.Range(0, spawnPoints.Length);
-    transform.position = spawnPoints[spawnPointRef];
-		transform.GetComponent<NavMeshAgent>().Warp(transform.position);
+    	transform.position = spawnPoints[spawnPointRef];
+		if(transform.GetComponent<NavMeshAgent>() != null){
+			transform.GetComponent<NavMeshAgent>().Warp(transform.position);
+		}
 		gameObject.SendMessage("SetupNPC");
 	}
 

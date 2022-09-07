@@ -18,12 +18,8 @@ MonoBehaviour:
   GuideDes: 
   taskIcon: {fileID: 21300000, guid: 4c2d33fff0d294a0b993e1d61b2bd3b5, type: 3}
   supportImages: []
-  unlocked: 0
   unlockReq: []
   rewardAmount: 0
-  completed: 0
-  targetCount: 0
-  progressCount: 0
+  targetCount: 1
   dailyRefresh: 0
   hoursCooldown: 0
-  timeToReset: 0
