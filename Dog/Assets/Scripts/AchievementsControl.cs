@@ -7,7 +7,7 @@ using System.Linq;
 public class AchievementsControl : MonoBehaviour {
 //private GameObject[] achievementsList;
 public Animator notifyAnim;
-public notifyPopup notifyPopScript;
+public notifyControl notifyConScript;
 public expandMenu menuPannel;
 public GameObject achievementsPannel;
 public GameObject blackoutPannel;
@@ -15,7 +15,7 @@ public GameObject achievementPrefab;
 public GameObject achContentFrame;
 public Transform playerObj;
 //public GameObject confettiPartObj;
-public GameObject confettiCameraObj;
+//public GameObject confettiCameraObj;
 //public Achievement[] achievementsList;
 //public int[] achProgressArray;
 
@@ -101,8 +101,8 @@ public List <bool> achCompleteList;
 				if(achProgressList[i] >= achPrefabList[i].targetAmount){
 					print("Achievement Completed - " + achPrefabList[i].title);
 					achCompleteList[i] = true;
-					notifyPopScript.AddNotify("Achivement Unlocked!" , achPrefabList[i].title);
-					confettiCameraObj.GetComponent<ParticleSystem>().Play();
+					notifyConScript.AddNotify(new NoteToDisplay(1, achPrefabList[i].title, "New Achivement Unlocked!"));
+					//confettiCameraObj.GetComponent<ParticleSystem>().Play();
 				}
 				SaveAchData();
 			}

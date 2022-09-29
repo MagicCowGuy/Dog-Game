@@ -16,7 +16,7 @@ MonoBehaviour:
   description: Make some noise! 100 times.
   saveCode: 4
   progress: 5
-  targetAmount: 100
+  targetAmount: 10
   typeCode: 5
   completed: 0
   GuiPanel: {fileID: 0}

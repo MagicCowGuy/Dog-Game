@@ -21,5 +21,4 @@ MonoBehaviour:
     diaLine: Have a go at running around,<br>tap somewhere you'd like to go.
   importantInfo: 1
   QuestToOffer: []
-  TaskUnlock:
-  - {fileID: 11400000, guid: abc0ac8d697288144a28424e3ec5b7a1, type: 2}
+  TaskUnlock: []

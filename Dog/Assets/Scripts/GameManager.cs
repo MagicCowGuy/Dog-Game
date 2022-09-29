@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 //using UnityEditor;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -42,5 +43,6 @@ void Start()
 		PlayerPrefs.DeleteAll();
 		print("RESETTING SAVE DATA");
 		HideMenu();
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 }

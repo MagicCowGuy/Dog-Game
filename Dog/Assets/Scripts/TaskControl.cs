@@ -29,6 +29,9 @@ public class TaskControl : MonoBehaviour
   public GameObject blackoutPanel;
   public expandMenu menuPanel;
   public DialogueManager dioManager;
+  public notifyControl notifyConScript;
+
+  private bool loadedData = false;
 
     void Awake()
     {
@@ -142,6 +145,9 @@ public class TaskControl : MonoBehaviour
             print("ITS A NEW COMPLETION FOR: "+ taskPrefabList[i].taskName);
             //ADD TIME COOLDOWN or set the time.time+cooldown as the value?
             taskTimeReset[i] = 140f;
+            if(loadedData){
+              notifyConScript.AddNotify(new NoteToDisplay(2, taskPrefabList[i].taskName, "Task Completed!", taskPrefabList[i].taskIcon));
+            }
           }
           taskCompList[i] = true;
           taskSmlPanelList[i].complete();
@@ -220,6 +226,7 @@ public class TaskControl : MonoBehaviour
       }
       CompleteCheck();
       UpdateTaskPanel();
+      loadedData = true;
     }
     
 }

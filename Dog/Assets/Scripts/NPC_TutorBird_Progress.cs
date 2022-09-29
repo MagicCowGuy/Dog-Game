@@ -22,6 +22,8 @@ public class NPC_TutorBird_Progress : MonoBehaviour
 
     private GameObject gameControlObj;
     private SmallTalk_Control stCont;
+    private notifyControl notifyConScript;
+
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +35,7 @@ public class NPC_TutorBird_Progress : MonoBehaviour
       playerNavMA = playerObj.GetComponent<NavMeshAgent>();
       gameControlObj = GameObject.FindWithTag("GameController");
       stCont = gameControlObj.GetComponent<SmallTalk_Control>();
+      notifyConScript = gameControlObj.GetComponent<notifyControl>();
     }
 
     // Update is called once per frame
@@ -88,10 +91,12 @@ public class NPC_TutorBird_Progress : MonoBehaviour
 
         if(diaOpened && alerting){
           alertStatus(false);
-        }
+          }
 
         yield return new WaitForSeconds(0.1f);
       }
+
+      notifyConScript.InstructNote(new NoteToDisplay(3, "Run around the yard.", "Tap locations to run to them."));
 
       while(true){
         if(playerNavMA != null){
@@ -104,6 +109,7 @@ public class NPC_TutorBird_Progress : MonoBehaviour
 
           watchCounter = 0;
           NPCScript.ProgressUpdate(0,1);
+          notifyConScript.InstructClear();
           yield break;
         }
         yield return new WaitForSeconds(0.2f);
@@ -123,6 +129,9 @@ public class NPC_TutorBird_Progress : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
       }
+
+      notifyConScript.InstructNote(new NoteToDisplay(3, "Spin around on the spot.", "Tap & hold, then drag your finger around."));
+
       watchCounter = 0;
       while(true){
         Quaternion tempRot = playerObj.transform.rotation;
@@ -134,6 +143,7 @@ public class NPC_TutorBird_Progress : MonoBehaviour
           stCont.startMonoThread(this.gameObject, NPCScript.curSmallTalk[0]);
 
           NPCScript.ProgressUpdate(0,2);
+          notifyConScript.InstructClear();
           yield break;
         }
       }
@@ -152,12 +162,16 @@ public class NPC_TutorBird_Progress : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
       }
+
+      notifyConScript.InstructNote(new NoteToDisplay(3, "Pick up the ball.", "Tap the ball to pick it up."));
+
       watchCounter = 0;
 
       while(watchCounter == 0){
         if(playerScript.holdingObj != null){
           watchCounter = 1;
           stCont.startMonoThread(this.gameObject, NPCScript.curSmallTalk[0]);
+          notifyConScript.InstructClear();
           NPCScript.ProgressUpdate(0,3);
           yield break;
         }
@@ -169,12 +183,15 @@ public class NPC_TutorBird_Progress : MonoBehaviour
     IEnumerator watchStat_0_3() {
       print("Watching for completion of Dropping Tutorial");
       watchCounter = 0;
+      notifyConScript.InstructNote(new NoteToDisplay(3, "Drop the ball.", "Tap yourself to drop it."));
+
       //print("yaypickedup");
       while(watchCounter == 0){
         if(playerScript.holdingObj == null){
           watchCounter = 1;
           stCont.startMonoThread(this.gameObject, NPCScript.curSmallTalk[0]);
           NPCScript.ProgressUpdate(0,4);
+          notifyConScript.InstructClear();
           yield break;
         }
         yield return new WaitForSeconds(0.3f);
@@ -193,6 +210,8 @@ public class NPC_TutorBird_Progress : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
       }
 
+      notifyConScript.InstructNote(new NoteToDisplay(3, "Throw the ball.", "Drag to aim and release to throw."));
+
       watchObj = null;
       watchCounter = 0;
 
@@ -205,6 +224,7 @@ public class NPC_TutorBird_Progress : MonoBehaviour
             watchObj = null;
             stCont.startMonoThread(this.gameObject, NPCScript.curSmallTalk[0]);
             NPCScript.ProgressUpdate(0,5);
+            notifyConScript.InstructClear();
             yield break;
           }
         }
