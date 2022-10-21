@@ -12,7 +12,8 @@ public class BuildControl : MonoBehaviour {
 	public GameObject buildPannel;
 	public GameObject buildOptionsPannel;
 	public GameObject buildLocationsFY;
-	public CamTarget mainCameraScript;
+	//public CamTarget mainCameraScript;
+	private cameraControl camConScript;
 	public TouchMovement movementScript;
 	public Canvas canvas;
 
@@ -43,6 +44,7 @@ public class BuildControl : MonoBehaviour {
 		numberOfPlacements = placementAreas.Length;
 		placementSaveArray = new int[numberOfPlacements];
 
+		camConScript = this.GetComponent<cameraControl>();
 		LoadBuild();
 
         //placementAreas = GameObject.FindGameObjectsWithTag("ItemArea");
@@ -56,7 +58,8 @@ public class BuildControl : MonoBehaviour {
 	public void ActivateBuildMode () {
 		menuPannel.menuHide();
 		//menuPannel.SetActive(false);
-		mainCameraScript.cameraMode = 2;
+		//mainCameraScript.cameraMode = 2;
+		camConScript.buildMode();
 		buildPannel.SetActive(true);
 		buildPannel.GetComponent<Animator>().SetTrigger("Open");
 		buildLocationsFY.SetActive(true);
@@ -69,7 +72,8 @@ public class BuildControl : MonoBehaviour {
 		PAHighlighting(0);
 		menuPannel.menuShow();
 		//menuPannel.SetActive(true);
-		mainCameraScript.cameraMode = 1;
+		//mainCameraScript.cameraMode = 1;
+		camConScript.watchPlayer();
 		//buildPannel.SetActive(false);
 		buildPannel.GetComponent<Animator>().SetTrigger("Close");
 		buildOptionsPannel.SetActive(false);

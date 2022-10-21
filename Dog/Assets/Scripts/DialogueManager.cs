@@ -19,6 +19,7 @@ public class DialogueManager : MonoBehaviour {
 	public Image NPCchatimage;
 	public NPC currentNPC;
 	private bool opendialogue = false;
+	public GameObject playerObj;
 
 	public GameObject QuestCardPrefab;
 	public DialogueThread curDiaThread;
@@ -114,6 +115,7 @@ public class DialogueManager : MonoBehaviour {
 		dialoguePannel.SetActive(false);
 		opendialogue = false;
 		//blackoutPannel.SetActive(false);
+		playerObj.GetComponent<TouchMovement>().stopTalking();
 	}
 
 	public void ReleaseCurrentNPC(){

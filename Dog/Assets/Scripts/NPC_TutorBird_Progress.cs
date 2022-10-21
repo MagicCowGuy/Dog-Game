@@ -23,7 +23,10 @@ public class NPC_TutorBird_Progress : MonoBehaviour
     private GameObject gameControlObj;
     private SmallTalk_Control stCont;
     private notifyControl notifyConScript;
+    private pickupControl pickupConScript;
+    private cameraControl camConScript;
 
+    public GameObject ballPrefab;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +39,7 @@ public class NPC_TutorBird_Progress : MonoBehaviour
       gameControlObj = GameObject.FindWithTag("GameController");
       stCont = gameControlObj.GetComponent<SmallTalk_Control>();
       notifyConScript = gameControlObj.GetComponent<notifyControl>();
+      pickupConScript = gameControlObj.GetComponent<pickupControl>();
     }
 
     // Update is called once per frame
@@ -162,6 +166,8 @@ public class NPC_TutorBird_Progress : MonoBehaviour
 
         yield return new WaitForSeconds(0.1f);
       }
+
+      pickupConScript.spawnPickup(ballPrefab, true, new Vector3(2,0,-5), Vector3.zero);
 
       notifyConScript.InstructNote(new NoteToDisplay(3, "Pick up the ball.", "Tap the ball to pick it up."));
 

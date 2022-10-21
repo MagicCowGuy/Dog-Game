@@ -26,6 +26,7 @@ public class pickup : MonoBehaviour
   public GameObject objTargetOutline;
 
   public string IDTag;
+  public string pickupName;
   public int RewardAmount;
 
   public int AchCode;

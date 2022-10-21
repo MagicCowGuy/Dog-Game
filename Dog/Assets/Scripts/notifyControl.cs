@@ -42,6 +42,10 @@ public class notifyControl : MonoBehaviour {
 
 	public Image noteImage;
 	
+	public Sprite taskSprite;
+	public Sprite achiveSprite;
+	public Sprite InstructSprite;
+	
 	public GameObject confettiCameraObj;
 	
 	//private Vector2 panPos;
@@ -96,6 +100,7 @@ public class notifyControl : MonoBehaviour {
 			BGAchive.SetActive(true);
 			confettiCameraObj.GetComponent<ParticleSystem>().Play();
 			BGAnim.SetTrigger("Baloons");
+			noteImage.sprite = achiveSprite;
 		}
 		
 		if(dispNote.noteType == 2){
@@ -105,6 +110,7 @@ public class notifyControl : MonoBehaviour {
 
 		if(dispNote.noteType == 3){
 			BGInstruct.SetActive(true);
+			noteImage.sprite = InstructSprite;
 		} else {
 			cooldownNote = 10;
 		}

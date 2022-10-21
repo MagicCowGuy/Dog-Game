@@ -10,6 +10,8 @@ public class TimeControl : MonoBehaviour
     DateTime oldDate;
     TimeSpan difference;
 
+    public float tarTimeScale = 1;
+
     public BirdControl BirdControlScript;
 
     // Start is called before the first frame update
@@ -45,7 +47,15 @@ public class TimeControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      Time.timeScale = Mathf.MoveTowards(Time.timeScale, tarTimeScale, 2 * Time.unscaledDeltaTime);
+// NOTES TO FINISH      Time.TimeScale - Time.unscaledDeltaTime
+    }
 
+    public void setTimeScale(float newtarTimeS){
+      if(newtarTimeS < tarTimeScale || newtarTimeS == 1){
+        tarTimeScale = newtarTimeS;
+      }
+      //set new time scale if its lower than current time scale
     }
 
     void OnApplicationQuit()

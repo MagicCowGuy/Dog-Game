@@ -15,7 +15,7 @@ MonoBehaviour:
   version: 5
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23,7 +23,10 @@ Material:
   m_Name: House
   m_Shader: {fileID: -6465566751694194690, guid: 2a7b75ebc3d47497cb34051f67bd3851,
     type: 3}
-  m_ShaderKeywords: _ENVIRONMENTREFLECTIONS_OFF _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _ENVIRONMENTREFLECTIONS_OFF
+  - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -59,5 +62,5 @@ Material:
     - _QueueOffset: 0
     m_Colors:
     - Color_44569095: {r: 1, g: 1, b: 1, a: 0}
-    - Color_E572DD9C: {r: 0.6666667, g: 0.6666667, b: 0.6666667, a: 1}
+    - Color_E572DD9C: {r: 0.627451, g: 0.627451, b: 0.74509805, a: 1}
   m_BuildTextureStacks: []

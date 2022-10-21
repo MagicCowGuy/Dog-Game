@@ -12,6 +12,8 @@ public class TouchMovement : MonoBehaviour
   public GameObject headObject;
   public GameObject gameManager;
   private Camera mainCamera;
+  private cameraControl camConScript;
+  private TimeControl timeCtrlScript;
 
 [Header("Tap effects & Emotes")]
   public GameObject TapMoveEffect;
@@ -89,6 +91,9 @@ public class TouchMovement : MonoBehaviour
     navMeshAgent = GetComponent<UnityEngine.AI.NavMeshAgent>();
     //anim.SetBool ("Pickup", false);
     mainCamera = Camera.main;
+    timeCtrlScript = gameManager.GetComponent<TimeControl>();
+    camConScript = gameManager.GetComponent<cameraControl>();
+    StartCoroutine("idleLoop");
   }
 
     void Update()
@@ -129,6 +134,7 @@ public class TouchMovement : MonoBehaviour
 
         if(pickupThrowable && throwVelocity > 4){
           anim.SetTrigger ("Throw");
+          timeCtrlScript.setTimeScale(1);
           print ("Throw " + throwVelocity);
         }
 
@@ -188,6 +194,7 @@ public class TouchMovement : MonoBehaviour
             if(!engagedNPC){
               targetObject.GetComponent<NPC>().TriggerDialogue();
               engagedNPC = true;
+              camConScript.watchConvo(this.gameObject,targetObject.GetComponent<NPC>().headObject);
             }
           }
 
@@ -230,23 +237,6 @@ public class TouchMovement : MonoBehaviour
         for (int i = 0; i < pathtest.corners.Length - 1; i++)
           Debug.DrawLine(pathtest.corners[i], pathtest.corners[i + 1], Color.blue);
       }
-
-      if(walking || jumping || rotating){
-        idle = false;
-      }else{
-        idle = true;
-      }
-
-      if(idle) {
-        idlecount -= 0.1f;
-        if(idlecount < 0) {
-          idleint = Random.Range(1,4);
-          anim.SetInteger("Idle Int", idleint);
-  				anim.SetTrigger("Idle Trigger");
-  				idlecount = Random.Range(25,35);
-        }
-      }
-
     }
 
     private bool IsPointerOverUIObject() {
@@ -265,7 +255,7 @@ public class TouchMovement : MonoBehaviour
         Vector3 aimhit = aimray.GetPoint(distance);
         Vector3 targetDir = aimhit - transform.position;
         targetDir.y = 0;
-        Vector3 newDir = Vector3.RotateTowards (transform.forward, targetDir, Time.deltaTime * 8.0f, 0.0f);
+        Vector3 newDir = Vector3.RotateTowards (transform.forward, targetDir, Time.unscaledDeltaTime * 8.0f, 0.0f);
         transform.rotation = Quaternion.LookRotation (newDir);
 
         if(holdingPickup){
@@ -278,6 +268,9 @@ public class TouchMovement : MonoBehaviour
           if (throwVelocity > 4) {
             if(pickupThrowable){
               ThrowRender.enabled = true;
+              //TIME SLOW DOWN
+              timeCtrlScript.setTimeScale(0.2f);
+              //Time.timeScale = 0.25f;
             }
             if(!holdingObj.GetComponent<pickup>().playerUsing){
               holdingObj.GetComponent<pickup>().playerUseStart();
@@ -285,6 +278,8 @@ public class TouchMovement : MonoBehaviour
             holdingObj.GetComponent<pickup>().playerForce = throwVelocity;
           } else {
             ThrowRender.enabled = false;
+            //TIME BACK TO NORMAL
+              timeCtrlScript.setTimeScale(1);
             if(holdingObj.GetComponent<pickup>().playerUsing){
               holdingObj.GetComponent<pickup>().playerUseStop();
             }
@@ -475,6 +470,7 @@ public class TouchMovement : MonoBehaviour
       walking = false;
       interacting = false;
       if(!toGround){
+        camConScript.watchObj(targetObject);
         navMeshAgent.updatePosition = false;
         navMeshAgent.isStopped = true;
       }
@@ -496,7 +492,7 @@ public class TouchMovement : MonoBehaviour
           anim.SetBool ("Jumping", false);
         }
 
-        timeJumping += 0.045f;
+        timeJumping += Time.deltaTime * 2.5f;
         yield return null;
       }
       if(timeJumping >= 1.0f){
@@ -506,6 +502,7 @@ public class TouchMovement : MonoBehaviour
 
     private void PlayerLand(bool toGround){
       if(toGround){
+        camConScript.watchPlayer();
         navMeshAgent.updatePosition = true;
         navMeshAgent.Warp(transform.position);
         GoToDestination(walkTargetPos);
@@ -601,4 +598,37 @@ public class TouchMovement : MonoBehaviour
       //GetComponent<AudioSource>().pitch = soundPitch;
       GetComponent<AudioSource>().PlayOneShot(soundFile, soundVolume);
     }
+
+  public void stopTalking() {
+    //engagedNPC = false;
+    if(currentInteractable != null){
+      camConScript.watchObj(currentInteractable);
+    } else {
+      camConScript.watchPlayer();
+    }
+  }
+
+  IEnumerator idleLoop(){
+    while(true){
+      //if(walking || jumping || rotating){
+      //  idle = false;
+      //}else{
+      //  idle = true;
+      //}
+
+      if(anim.GetCurrentAnimatorStateInfo(0).IsName("Stopped")) {
+        idlecount -= 1.0f;
+        if(idlecount < 0) {
+          idleint = Random.Range(1,4);
+          anim.SetInteger("Idle Int", idleint);
+  				anim.SetTrigger("Idle Trigger");
+  				idlecount = Random.Range(3,5);
+        }
+      } else {
+        idlecount = Mathf.Clamp(idlecount,1,idlecount);
+      }
+    yield return new WaitForSeconds(1.0f);
+    }
+    yield break;
+  }
 }

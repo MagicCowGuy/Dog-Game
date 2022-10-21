@@ -22,6 +22,7 @@ public class NPC_Postman : MonoBehaviour
   private bool delaying = false;
 
   public bool holdforplayer = false;
+  public bool waitforplayer = false;
 
   public Vector3[] postalRoute;
   public int routeProgress;
@@ -80,6 +81,12 @@ public class NPC_Postman : MonoBehaviour
           myanim.SetTrigger("Stop");
 
           yield return new WaitForSeconds(2);
+          if(transform.position.x <= 5 && transform.position.x >= -5){
+            while(waitforplayer){
+              print("waiting to talk to the player before leaving - POSTMAN");
+              yield return new WaitForSeconds(1);  
+            }
+          }
           nextStop();
         }
         yield return new WaitForSeconds(0.1f);

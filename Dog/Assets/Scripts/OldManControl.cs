@@ -179,7 +179,7 @@ public class OldManControl : MonoBehaviour {
 		foreach (GameObject go in possibletargets) {
 			difftarget = go.transform.position - transform.position;
 			tempdist = difftarget.magnitude;
-			if (tempdist < distfromtarget && go.transform.position.z < -16.5 && go.GetComponent<PickupControl>().pickedUp == false) {
+			if (tempdist < distfromtarget && go.transform.position.z < -16.5 && go.GetComponent<pickup>().pickedUp == false) {
 				closesttarget = go;
 				distfromtarget = tempdist;
 			}

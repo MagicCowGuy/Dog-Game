@@ -94,7 +94,7 @@ public class NPC_OldMan : MonoBehaviour
     		closesttarget = null;
         distfromtarget = Mathf.Infinity;
     		foreach (GameObject postar in possibletargets) {
-          if(postar.transform.position.z < -16.7f && postar.GetComponent<PickupControl>().pickedUp == false){
+          if(postar.transform.position.z < -16.7f && postar.GetComponent<pickup>().pickedUp == false){
 
             distcheck = Vector3.Distance(postar.transform.position, transform.position);
             if(closesttarget == null || distcheck < tempdist){

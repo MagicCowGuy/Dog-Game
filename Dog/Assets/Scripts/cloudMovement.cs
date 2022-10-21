@@ -15,7 +15,7 @@ public class cloudMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        posloop.x -= 0.05f;
+        posloop.x -= Time.deltaTime * 2.5f;
         if(posloop.x < -40){posloop.x = 40;}
         transform.position = posloop;
     }

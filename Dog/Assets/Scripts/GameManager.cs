@@ -9,11 +9,12 @@ public class GameManager : MonoBehaviour {
 public GameObject optionsPannel;
 public expandMenu menuPannel;
 public GameObject blackoutPannel;
-public CamTarget cameraScript;
+//public CamTarget cameraScript;
+public cameraControl camConScript;
 
 void Start()
 {
-		//Application.targetFrameRate = 60;
+		Application.targetFrameRate = 60;
 		ShowMenu();
 }
 
@@ -29,14 +30,16 @@ void Start()
 		menuPannel.menuHide();
 		optionsPannel.SetActive(true);
 		blackoutPannel.SetActive(true);
-		cameraScript.cameraMode = 3;
+		camConScript.menuMode();
+		//cameraScript.cameraMode = 3;
 	}
 
 	public void HideMenu () {
 		menuPannel.menuShow();
 		optionsPannel.SetActive(false);
 		blackoutPannel.SetActive(false);
-		cameraScript.cameraMode = 1;
+		camConScript.watchPlayer();
+		//cameraScript.cameraMode = 1;
 	}
 
 	public void ResetSave () {

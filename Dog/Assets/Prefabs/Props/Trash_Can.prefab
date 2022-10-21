@@ -158,8 +158,8 @@ MonoBehaviour:
   RewardAmount: 3
   AchCode: 2
   AchIncrement: 1
-  QuestCode: 0
-  QuestIncrement: 0
+  TaskCode: 0
+  TaskProgress: 0
   locpos: {x: 0.1, y: 0, z: 1}
   locrot: {x: 0, y: 0, z: 90}
   soundImpact: {fileID: 8300000, guid: bbe2835063deb2c47b81a469a86084c7, type: 3}
@@ -177,7 +177,7 @@ Rigidbody:
   m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 2
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!136 &3088598926959722468

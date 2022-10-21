@@ -44,11 +44,11 @@ public class NPC_QueenBee : MonoBehaviour
       RdmSinEffect = Mathf.Sin(2.5f * Time.time) * 0.05f;
       targetDirect = curInterestPos - transform.position;
 
-      momentum += Vector3.Normalize(targetDirect) * 0.0015f;
-      momentum = Vector3.ClampMagnitude(momentum, 0.09f);
+      momentum += Vector3.Normalize(targetDirect) * Time.deltaTime * 5;
+      momentum = Vector3.ClampMagnitude(momentum, 6.0f);
 
       tarDirNorm = Vector3.Normalize(targetDirect);
-      transform.position += momentum;
+      transform.position += momentum * Time.deltaTime;
 
       Vector3 flatTarDir = new Vector3(targetDirect.x,0,targetDirect.z);
 
@@ -63,8 +63,8 @@ public class NPC_QueenBee : MonoBehaviour
       if(targetDirect.x < 0){
         yAngle = -yAngle;
       }
-      tiltQuat = Quaternion.RotateTowards(tiltQuat, Quaternion.Euler(tiltRotVect), 5);
-      spinQuat = Quaternion.RotateTowards(spinQuat, Quaternion.AngleAxis(yAngle, Vector3.up), 3);
+      tiltQuat = Quaternion.RotateTowards(tiltQuat, Quaternion.Euler(tiltRotVect), 200 * Time.deltaTime);
+      spinQuat = Quaternion.RotateTowards(spinQuat, Quaternion.AngleAxis(yAngle, Vector3.up), 100 * Time.deltaTime);
       targetTiltRot = tiltQuat * spinQuat;
       //targetTiltRot = Quaternion.LookRotation(flatTarDir, new Vector3(0,2,0)) * Quaternion.Euler(tiltRotVect);
       //targetTiltRot.y = yAngle;

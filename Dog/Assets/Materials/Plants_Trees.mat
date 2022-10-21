@@ -15,7 +15,7 @@ MonoBehaviour:
   version: 5
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23,7 +23,8 @@ Material:
   m_Name: Plants_Trees
   m_Shader: {fileID: -6465566751694194690, guid: 03f1615292675480fb2b9dc090ba4a61,
     type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -59,6 +60,6 @@ Material:
     - _QueueControl: 0
     - _QueueOffset: 0
     m_Colors:
-    - Color_E572DD9C: {r: 0.81301177, g: 0.8257516, b: 0.8490566, a: 1}
+    - Color_E572DD9C: {r: 0.627451, g: 0.627451, b: 0.74509805, a: 1}
     - Vector2_AC93AB59: {r: 0.88, g: 0.47, b: 5, a: 0}
   m_BuildTextureStacks: []

@@ -66,7 +66,7 @@ public class SmalTalkBox : MonoBehaviour
         LayoutRebuilder.ForceRebuildLayoutImmediate(myRT);
         monoThreadProg ++;
         SetChatOffset();
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(1.5f);
       }
       Destroy(this.gameObject);
       yield break;

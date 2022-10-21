@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ca74c55dcd0cdb4e8568eafd369d82c, type: 3}
+  m_Name: Postie_Intro_03
+  m_EditorClassIdentifier: 
+  dialogueThread:
+  - diaSpeaker: 0
+    diaLine: Thanks for your help delivering.
+  - diaSpeaker: 0
+    diaLine: Don't be too put off by old man George's grumpiness.
+  - diaSpeaker: 0
+    diaLine: He's really a big softie once you get to know him.
+  - diaSpeaker: 0
+    diaLine: Maybe trick him into a game of fetch, It'll do him good!
+  importantInfo: 1
+  QuestToOffer: []
+  TaskUnlock:
+  - {fileID: 11400000, guid: f762c72c0da456b41a29ef7ce17a7843, type: 2}
