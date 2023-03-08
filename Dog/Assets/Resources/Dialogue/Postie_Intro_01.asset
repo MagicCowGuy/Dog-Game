@@ -18,8 +18,7 @@ MonoBehaviour:
   - diaSpeaker: 0
     diaLine: Please to meet you little one, and welcome to the neighbourhood
   - diaSpeaker: 0
-    diaLine: If ever you can help me take the mail to the front door I'd very much
-      appreciate it.
+    diaLine: Would you take this to your front door? I'd be so grateful.
   importantInfo: 1
   QuestToOffer: []
   TaskUnlock:

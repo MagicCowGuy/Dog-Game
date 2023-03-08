@@ -62,6 +62,7 @@ public class TouchMovement : MonoBehaviour
   private bool engagedNPC = false;
   private Quaternion lookRot;
   private Vector3 lookdir;
+  private GameObject NPCHeadObj;
 
   //Interactable Objects Values
   public bool interacting;
@@ -96,16 +97,13 @@ public class TouchMovement : MonoBehaviour
     StartCoroutine("idleLoop");
   }
 
-    void Update()
-    {
-//print(throwVelocity);
+  void Update() {
 
-      if (Input.GetMouseButtonDown(0)){
-        if (EventSystem.current.IsPointerOverGameObject() || EventSystem.current.currentSelectedGameObject != null || IsPointerOverUIObject()){
-    			uIClick = true;
-          //print("UI CLICK");
-    		}
-      }
+    if (Input.GetMouseButtonDown(0)){
+       if (EventSystem.current.IsPointerOverGameObject() || EventSystem.current.currentSelectedGameObject != null || IsPointerOverUIObject()){
+    		uIClick = true;
+  		}
+    }
 
     if(Input.touchCount >= 2){
       zoomPanMode = true;
@@ -194,7 +192,8 @@ public class TouchMovement : MonoBehaviour
             if(!engagedNPC){
               targetObject.GetComponent<NPC>().TriggerDialogue();
               engagedNPC = true;
-              camConScript.watchConvo(this.gameObject,targetObject.GetComponent<NPC>().headObject);
+              NPCHeadObj = targetObject.GetComponent<NPC>().headObject;
+              camConScript.watchConvo(this.gameObject,NPCHeadObj);
             }
           }
 
@@ -236,6 +235,23 @@ public class TouchMovement : MonoBehaviour
       if(pathtest != null){
         for (int i = 0; i < pathtest.corners.Length - 1; i++)
           Debug.DrawLine(pathtest.corners[i], pathtest.corners[i + 1], Color.blue);
+      }
+    }
+
+    void LateUpdate () {
+      if(engagedNPC && targetObject != null){
+        headObject.transform.rotation = Quaternion.LookRotation(NPCHeadObj.transform.position - headObject.transform.position, Vector3.up) * Quaternion.Euler(10,0,0);
+        //NPCHeadObj.transform.localRotation = Quaternion.LookRotation(headObject.transform.position - NPCHeadObj.transform.position, Vector3.up) * Quaternion.Euler(10,0,0);
+      }
+    }
+
+    public void disengageNPC(){
+      engagedNPC = false;
+      NPCHeadObj = null;
+      if(targetObject != null){
+        if(targetObject.CompareTag("NPC")){
+          targetObject = null;
+        }
       }
     }
 
@@ -338,14 +354,19 @@ public class TouchMovement : MonoBehaviour
           }
 
           if(targetObject.CompareTag ("NPC")){
+            
             engagedNPC = false;
+            //NPCHeadObj = null;
             //print(Vector3.Distance(transform.position, targetObject.transform.position));
+          } else {
+            disengageNPC();
           }
           //If raycast hits no player, objects, interactables or NPCs
         } else {
           //clear targets
           targetObject = null;
           CancelInvoke("ClosestEdge");
+          disengageNPC();
 
           int terrainlayerMask = LayerMask.GetMask ("Terrain");
 					if (Physics.Raycast (ray, out hit, 200, terrainlayerMask)) {
@@ -389,6 +410,8 @@ public class TouchMovement : MonoBehaviour
       //Wait a frame for NavMesh to update
       yield return null;
 
+      print("NAVMESH FUCKERY GOING ON");
+      
       CurrentObj.GetComponent<NavMeshObstacle>().carving = true;
       navMeshAgent.Warp(transform.position);
       NavMeshPath path = new NavMeshPath();
@@ -410,6 +433,7 @@ public class TouchMovement : MonoBehaviour
       destObj.GetComponent<NavMeshObstacle>().carving = false;
       //Wait a frame for NavMesh to update
       yield return null;
+      print("NAVMESH FUCKERY GOING ON");
 
       CurrentObj.GetComponent<NavMeshObstacle>().carving = true;
       if(!isPickup)
@@ -484,7 +508,7 @@ public class TouchMovement : MonoBehaviour
       timeJumping = 0;
       while(timeJumping < 1.0f){
         jumpCurrentPos = Vector3.Lerp(jumpStartPos, jumpTargetPos, timeJumping);
-        jumpCurrentPos.y = jumpCurrentPos.y + Mathf.Sin(Mathf.PI * timeJumping) * 2.6f;
+        jumpCurrentPos.y = jumpCurrentPos.y + Mathf.Sin(Mathf.PI * timeJumping) * 3.6f;
 
         transform.position = jumpCurrentPos;
 
@@ -492,10 +516,11 @@ public class TouchMovement : MonoBehaviour
           anim.SetBool ("Jumping", false);
         }
 
-        timeJumping += Time.deltaTime * 2.5f;
+        timeJumping += Time.deltaTime * 2.0f;
         yield return null;
       }
       if(timeJumping >= 1.0f){
+        transform.position = jumpTargetPos;
         PlayerLand(toGround);
       }
     }
@@ -589,8 +614,8 @@ public class TouchMovement : MonoBehaviour
     public void Footstep()
 		{
 				//GetComponent<AudioSource>().volume = 0.3f + Random.Range(-0.05f, 0.05f);
-				//GetComponent<AudioSource>().pitch = 1.1f + Random.Range(-0.1f,0.1f);
-				GetComponent<AudioSource>().PlayOneShot(stepsound, 1);
+				GetComponent<AudioSource>().pitch = 1 + Random.Range(-0.2f,0.2f);
+				GetComponent<AudioSource>().PlayOneShot(stepsound, Random.Range(0.55f,0.6f));
 		}
 
     public void publicSound(float soundVolume, AudioClip soundFile){
@@ -601,6 +626,7 @@ public class TouchMovement : MonoBehaviour
 
   public void stopTalking() {
     //engagedNPC = false;
+    disengageNPC();
     if(currentInteractable != null){
       camConScript.watchObj(currentInteractable);
     } else {
@@ -629,6 +655,6 @@ public class TouchMovement : MonoBehaviour
       }
     yield return new WaitForSeconds(1.0f);
     }
-    yield break;
+    //yield break;
   }
 }

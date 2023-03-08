@@ -78,11 +78,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6c67166eeed40d59469a2d632e835a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posoffset: {x: 0, y: 1.5, z: 0}
+  posoffset: {x: 0, y: 1.6, z: 0}
   specificoffset: 0
   lockInInteract: 1
   parentForPlayer: {fileID: 4929810524894278860}
-  playerTargetLockPosition: {x: 0, y: 1.7, z: 0}
+  camOffset: {x: 0, y: 3, z: 0}
   playerObj: {fileID: 0}
   particleScript: {fileID: 0}
   clicked: 0

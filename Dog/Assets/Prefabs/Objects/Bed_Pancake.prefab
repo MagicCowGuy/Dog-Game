@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 4084496979672651195}
   - component: {fileID: 7786159379780533504}
   - component: {fileID: 7460521781882715638}
+  - component: {fileID: -6423764983928991781}
   m_Layer: 15
   m_Name: Bed_Pancake
   m_TagString: Interactable
@@ -96,11 +97,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf6c67166eeed40d59469a2d632e835a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  posoffset: {x: 0, y: 1.4, z: 0}
+  posoffset: {x: 0, y: 1.5, z: 0}
   specificoffset: 0
   lockInInteract: 0
   parentForPlayer: {fileID: 3183752619714828170}
-  playerTargetLockPosition: {x: 0, y: 1.6, z: 0}
+  camOffset: {x: 0, y: 3, z: 0}
   playerObj: {fileID: 0}
   particleScript: {fileID: 0}
   clicked: 0
@@ -118,7 +119,7 @@ NavMeshObstacle:
   m_Enabled: 1
   serializedVersion: 3
   m_Shape: 0
-  m_Extents: {x: 2, y: 3, z: 2}
+  m_Extents: {x: 2.5, y: 3, z: 2.5}
   m_MoveThreshold: 0.1
   m_Carve: 1
   m_CarveOnlyStationary: 1
@@ -140,6 +141,22 @@ MonoBehaviour:
   RightHandSide: {fileID: 1282928737821020035}
   Middle: {fileID: 0}
   shineGroup: {fileID: 1788342364289014725}
+--- !u!114 &-6423764983928991781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4084496979672651192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e3fdca004f2d45fe8abbed571a8abd5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 0
+  m_Area: 0
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: 00000000
 --- !u!1001 &890156800761982068
 PrefabInstance:
   m_ObjectHideFlags: 0

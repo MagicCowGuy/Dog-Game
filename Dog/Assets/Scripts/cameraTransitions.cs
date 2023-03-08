@@ -16,7 +16,7 @@ public class cameraTransitions : MonoBehaviour
     private RectTransform maskRT;
 
     private bool expanding;
-    private bool contracting;
+    //private bool contracting;
     private bool animating;
 
     private float IrisSize;
@@ -41,7 +41,7 @@ public class cameraTransitions : MonoBehaviour
       maskObj.SetActive(true);
 
       expanding = true;
-      contracting = true;
+      //contracting = true;
       animating = true;
       IrisSize = 30;
     }
@@ -57,7 +57,7 @@ public class cameraTransitions : MonoBehaviour
     {
       animating = false;
       expanding = false;
-      contracting = false;
+      //contracting = false;
       blackoutObj.SetActive(false);
       maskObj.SetActive(false);
     }

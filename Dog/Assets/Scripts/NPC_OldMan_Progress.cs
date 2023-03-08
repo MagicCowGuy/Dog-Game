@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 public class NPC_OldMan_Progress : MonoBehaviour
 {
-    private NPC_TutorBird tbNPC;
+    private NPC_OldMan coreNPCScript;
     public NPC NPCScript;
     private int watchedChap = -1;
     private int watchedSubChap = -1;
@@ -26,7 +26,7 @@ public class NPC_OldMan_Progress : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-      tbNPC = this.GetComponent<NPC_TutorBird>();
+      coreNPCScript = this.GetComponent<NPC_OldMan>();
       NPCScript = this.GetComponent<NPC>();
       playerObj = GameObject.FindWithTag("Player");
       playerScript = playerObj.GetComponent<TouchMovement>();

@@ -37,7 +37,7 @@ public class TrafficAI : MonoBehaviour
       body.transform.localPosition = bodyStartPos + bodyOffsetPos;
 
 
-      transform.position += Vector3.right * maxSpeed * (Time.deltaTime * 50);
+      transform.position += Vector3.right * maxSpeed * (Time.deltaTime * 80);
       if(transform.position.x > 50){
         Destroy(this.gameObject);
       }

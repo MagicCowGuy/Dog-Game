@@ -8,6 +8,7 @@ public class DialogueManager : MonoBehaviour {
 
 	public GameObject dialoguePannel;
 	public expandMenu menuPannel;
+	public UIBgControl uIBg;
 	public GameObject blackoutPannel;
 	public GameObject QuestCardsPannel;
 	public QuestControl QuestControlScript;
@@ -31,6 +32,7 @@ public class DialogueManager : MonoBehaviour {
 	void Start () {
 		sentences = new Queue<string>();
 		names = new Queue<string>();
+		uIBg = this.GetComponent<UIBgControl>();
 	}
 
 	void Update () {
@@ -45,7 +47,8 @@ public class DialogueManager : MonoBehaviour {
 		menuPannel.menuHide();
 		dialoguePannel.SetActive(true);
 		opendialogue = true;
-		blackoutPannel.SetActive(true);
+		uIBg.halfOut();
+		//blackoutPannel.SetActive(true);
 		currentNPC = NPCobj.GetComponent<NPC>();
 		this.GetComponent<SmallTalk_Control>().shutDownST();
 		//Debug.Log("Starting conversation");
@@ -80,7 +83,8 @@ public class DialogueManager : MonoBehaviour {
 				PopulateQuestList();
 			}
 			if(curDiaThread.TaskUnlock.Length == 0 && curDiaThread.QuestToOffer.Length == 0){
-				blackoutPannel.SetActive(false);
+				uIBg.noneOut();
+				//blackoutPannel.SetActive(false);
 				menuPannel.menuShow();
 				//NPC.GetComponent<NPC>().ReleaseNPC();
 				currentNPC.GetComponent<NPC>().ReleaseNPC();

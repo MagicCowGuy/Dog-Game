@@ -152,12 +152,13 @@ public class pickup : MonoBehaviour
           gameController.GetComponent<AchievementsControl>().AchievementUpdate (AchCode, AchIncrement);
   				gameController.GetComponent<TaskControl>().TaskProgress(TaskCode,TaskProgress);
           Instantiate (killEffect, transform.position - new Vector3 (0, -1, 0), Quaternion.Euler (-90, 0, 0));
-          for (int i = 0; i < RewardAmount; i++) {
+          //for (int i = 0; i < RewardAmount; i++) {
             //spawns rewards evenly spread out
-            GameObject rewardspawn = (GameObject)Instantiate (RewardObject, transform.position - new Vector3 (0, -2, 0), Quaternion.Euler (0, 0, 0));
-            rewardspawn.transform.eulerAngles = new Vector3 (0, ((360 / RewardAmount) * (i + 1)), 0);
-            rewardspawn.GetComponent<Rigidbody>().velocity = rewardspawn.transform.forward * Random.Range(1,12) + Vector3.up * Random.Range(4,6);
-          }
+          //  GameObject rewardspawn = (GameObject)Instantiate (RewardObject, transform.position - new Vector3 (0, -2, 0), Quaternion.Euler (0, 0, 0));
+          //  rewardspawn.transform.eulerAngles = new Vector3 (0, ((360 / RewardAmount) * (i + 1)), 0);
+          //  rewardspawn.GetComponent<Rigidbody>().velocity = rewardspawn.transform.forward * Random.Range(1,12) + Vector3.up * Random.Range(4,6);
+          //}
+          gameController.GetComponent<Scoring>().CoinDrop(transform.position, RewardAmount);
           Destroy (gameObject);
         }
       }

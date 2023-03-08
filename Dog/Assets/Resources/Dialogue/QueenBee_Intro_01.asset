@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueThread:
   - diaSpeaker: 0
-    diaLine: Hello my lovely! You have a wonderful collection of flowers here.
+    diaLine: Hello my lovely! What a nice big garden you have here.
   - diaSpeaker: 0
-    diaLine: They do look like they could use some water though...
+    diaLine: It looks like it would love some water from that watering can.
   - diaSpeaker: 0
-    diaLine: Please put that watering can to use from time to time.
+    diaLine: If you sprinkle water around I'll bring the pollen, sound good?
   importantInfo: 1
   QuestToOffer: []
   TaskUnlock:

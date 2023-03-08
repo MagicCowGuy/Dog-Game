@@ -10,7 +10,8 @@ public Animator notifyAnim;
 public notifyControl notifyConScript;
 public expandMenu menuPannel;
 public GameObject achievementsPannel;
-public GameObject blackoutPannel;
+public UIBgControl uIBg;
+//public GameObject blackoutPannel;
 public GameObject achievementPrefab;
 public GameObject achContentFrame;
 public Transform playerObj;
@@ -33,6 +34,7 @@ public List <bool> achCompleteList;
 		achievementsPannel.SetActive(false);
 		LoadAchPrefabs();
 		PopulateAchievements();
+		uIBg = this.GetComponent<UIBgControl>();
 	}
 
 	private void LoadAchPrefabs(){
@@ -80,13 +82,15 @@ public List <bool> achCompleteList;
 	public void ShowAchievementsUI () {
 		menuPannel.menuHide();
 		achievementsPannel.SetActive(true);
-		blackoutPannel.SetActive(true);
+		uIBg.fullOut();
+		//blackoutPannel.SetActive(true);
 	}
 
 	public void HideAchievementsUI () {
 		menuPannel.menuShow();
 		achievementsPannel.SetActive(false);
-		blackoutPannel.SetActive(false);
+		uIBg.noneOut();
+		//blackoutPannel.SetActive(false);
 	}
 
 	public void AchievementUpdate (int achUpCode, int achUpAmount) {

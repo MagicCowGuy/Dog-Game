@@ -8,14 +8,17 @@ public class GameManager : MonoBehaviour {
 
 public GameObject optionsPannel;
 public expandMenu menuPannel;
-public GameObject blackoutPannel;
+public UIBgControl uIBg;
+//public GameObject blackoutPannel;
 //public CamTarget cameraScript;
 public cameraControl camConScript;
 
 void Start()
 {
-		Application.targetFrameRate = 60;
+		//Application.targetFrameRate = 60;
+		QualitySettings.vSyncCount = 0;
 		ShowMenu();
+		//uIBg = this.GetComponent<UIBgControl>();
 }
 
 	public void doExitGame()
@@ -29,7 +32,8 @@ void Start()
 	public void ShowMenu () {
 		menuPannel.menuHide();
 		optionsPannel.SetActive(true);
-		blackoutPannel.SetActive(true);
+		uIBg.clearOut();
+		//blackoutPannel.SetActive(true);
 		camConScript.menuMode();
 		//cameraScript.cameraMode = 3;
 	}
@@ -37,7 +41,8 @@ void Start()
 	public void HideMenu () {
 		menuPannel.menuShow();
 		optionsPannel.SetActive(false);
-		blackoutPannel.SetActive(false);
+		uIBg.noneOut();
+		//blackoutPannel.SetActive(false);
 		camConScript.watchPlayer();
 		//cameraScript.cameraMode = 1;
 	}

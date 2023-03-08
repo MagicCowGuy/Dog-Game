@@ -4937,14 +4937,14 @@ MonoBehaviour:
   specificoffset: 0
   lockInInteract: 1
   parentForPlayer: {fileID: 4026274044432308197}
-  playerTargetLockPosition: {x: 0, y: 0, z: 0}
+  camOffset: {x: 0, y: 2, z: 0}
   playerObj: {fileID: 0}
   particleScript: {fileID: 2549539412280713535}
   clicked: 0
   interacting: 0
   radius: 2
   impactSound: {fileID: 8300000, guid: dea4541d105c3054d92e1bc8c4bd66c5, type: 3}
-  impactSoundVolume: 0.5
+  impactSoundVolume: 1
 --- !u!114 &2549539412280713535
 MonoBehaviour:
   m_ObjectHideFlags: 0

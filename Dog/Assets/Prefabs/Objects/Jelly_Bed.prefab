@@ -4970,12 +4970,12 @@ MonoBehaviour:
   specificoffset: 0
   lockInInteract: 0
   parentForPlayer: {fileID: 7626610311301600820}
-  playerTargetLockPosition: {x: 0, y: 2, z: 0}
+  camOffset: {x: 0, y: 4, z: 0}
   playerObj: {fileID: 0}
   particleScript: {fileID: 3817054559246089177}
   clicked: 0
   interacting: 0
-  radius: 1.5
+  radius: 2
   impactSound: {fileID: 0}
   impactSoundVolume: 0
 --- !u!136 &3817054559246089176

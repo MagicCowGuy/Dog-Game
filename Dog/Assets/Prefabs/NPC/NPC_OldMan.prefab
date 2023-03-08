@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4483278532309032653}
-  - component: {fileID: 4483278532309031219}
   - component: {fileID: 4483278532309032651}
   - component: {fileID: 4483278532309032654}
   - component: {fileID: 4483278532309032655}
@@ -34,7 +33,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4483278532309032650}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.45, y: -2.43, z: -19.07}
+  m_LocalPosition: {x: -20.45, y: 0, z: -19.07}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -43,28 +42,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4483278532309031219
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4483278532309032650}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1934b352a2bda86479e753b06b21d977, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  holdforplayer: 0
-  delayTimer: 0
-  delaying: 0
-  NPCMode: 1
-  targetPickup: {fileID: 0}
-  heldPickup: {fileID: 0}
-  leftHand: {fileID: 6938144813970456028}
-  gameControlObj: {fileID: 0}
-  seats: []
-  dirFactor: 0
 --- !u!195 &4483278532309032651
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -137,8 +114,8 @@ MonoBehaviour:
     type: 3}
   gameControlObj: {fileID: 0}
   spawnPoints:
-  - {x: -45, y: -2.47, z: -21.5}
-  - {x: 45, y: -2.47, z: -21.5}
+  - {x: -45, y: 0, z: -28.5}
+  - {x: 45, y: 0, z: -28.5}
   holdforplayer: 0
   curProgChapter: 0
   curProgSubChapter: 0

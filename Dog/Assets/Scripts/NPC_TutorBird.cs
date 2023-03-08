@@ -93,7 +93,7 @@ public class NPC_TutorBird : MonoBehaviour
     public IEnumerator FlyIn(){
       flying = true;
       myanim.SetTrigger("Fly");
-      flyTarget = new Vector3(Random.Range(-11,11), 5.5f, Random.Range(-2,-10));
+      flyTarget = new Vector3(Random.Range(-14,16), 5.5f, Random.Range(-10,-24));
       flyMaxSpeed = 0.3f;
       while (flying){
         flyVelocity += (flyTarget - transform.position).normalized * 0.01f;
@@ -161,7 +161,7 @@ public class NPC_TutorBird : MonoBehaviour
         flyTarget += (Vector3.up * 0.2f) - (Vector3.forward * 0.1f);
         yield return null;
       }
-      yield break;
+      //yield break;
     }
 
     public void publicSound(float soundVolume, AudioClip soundFile){

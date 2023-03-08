@@ -19,7 +19,7 @@ public class NPC_Postman : MonoBehaviour
   public bool stopping = false;
 
   public float delayTimer;
-  private bool delaying = false;
+  //private bool delaying = false;
 
   public bool holdforplayer = false;
   public bool waitforplayer = false;

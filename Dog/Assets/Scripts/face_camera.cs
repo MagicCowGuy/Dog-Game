@@ -21,6 +21,8 @@ public class face_camera : MonoBehaviour {
 	private float maxvelspeed = 32f;
 	private float rndoffset;
 
+    public int coinValue;
+
 	Rigidbody m_Rigidbody;
 
     // Use this for initialization
@@ -73,8 +75,8 @@ public class face_camera : MonoBehaviour {
 
     void Collect ()
     {
-      ScoreManager.coinNumber += 10;
-      ScoreManager.ScoreUpdate();
+      //ScoreManager.coinNumber += coinValue;
+      ScoreManager.ScoreUpdate(coinValue);
       Destroy(this.gameObject);
 
       playerAudioSource.volume = 1.5f + Random.Range(-0.05f, 0.05f);

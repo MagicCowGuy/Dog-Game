@@ -55,7 +55,7 @@ public class NPC_Control_OLD : MonoBehaviour
     IEnumerator SpawnCheckCoRo(){
 
       while(true){
-        bool AllActive = true;
+        //bool AllActive = true;
         for (int i = 0; i<NPCPrefabIndex.Length; i++){
           
         }

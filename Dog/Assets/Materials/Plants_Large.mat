@@ -139,8 +139,8 @@ Material:
     - Vector1_30596B1C: 0.35
     - Vector1_5CF65990: 0.175
     - Vector1_CAC1A894: 2.75
-    - Vector1_D17A20F2: 1.76
-    - Vector1_FF7ECE2F: 0.03
+    - Vector1_D17A20F2: 0.38
+    - Vector1_FF7ECE2F: 0.15
     - _AlphaClip: 1
     - _Blend: 0
     - _BumpScale: 1
@@ -154,6 +154,7 @@ Material:
     - _Glossiness: 0
     - _GlossinessSource: 0
     - _GlossyReflections: 0
+    - _Ground_Offset: 0.3
     - _HeightTransition: 0
     - _Metallic: 0
     - _Metallic0: 0
@@ -182,7 +183,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_E572DD9C: {r: 0.627451, g: 0.627451, b: 0.74509805, a: 1}
-    - Vector2_AC93AB59: {r: 8, g: 0, b: 0, a: 0}
+    - Vector2_AC93AB59: {r: 2, g: 2, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 0.5, g: 0.5, b: 0.5, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

@@ -43,7 +43,7 @@ public class BirdControl : MonoBehaviour
     void FastPopulate (int birdsToAdd){
       for (int i = 0; i < birdsToAdd; i++)
         {
-          Vector3 RdmSpawnPos = new Vector3(Random.Range(-19,16), 2.5f, Random.Range(-10,1));
+          Vector3 RdmSpawnPos = new Vector3(Random.Range(-15,18), 0.1f, Random.Range(-23,-10));
           GameObject birdspawn = (GameObject)Instantiate (birdPrefab, RdmSpawnPos, Quaternion.Euler (0, 0, 0));
           birdspawn.GetComponent<BirdAI>().playerTransform = playerObj.transform;
           //print("Spawning Bird!");

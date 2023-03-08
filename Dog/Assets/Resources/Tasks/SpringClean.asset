@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   taskCode: 3
   taskName: Spring Clean
-  taskDes: 
+  taskDes: Put any trash into the garbage bin.
   GuideDes: 
   taskIcon: {fileID: 21300000, guid: 4c2d33fff0d294a0b993e1d61b2bd3b5, type: 3}
   supportImages: []

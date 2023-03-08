@@ -36,8 +36,7 @@ Transform:
 --- !u!1 &3088598926959722466
 GameObject:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 100004, guid: f872bd6fcff3149f5a7d335d2a80d304,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
@@ -60,8 +59,7 @@ GameObject:
 --- !u!4 &3088598926959722465
 Transform:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 400004, guid: f872bd6fcff3149f5a7d335d2a80d304,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3088598926959722466}
@@ -78,8 +76,7 @@ Transform:
 --- !u!33 &3088598926959722464
 MeshFilter:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 3300002, guid: f872bd6fcff3149f5a7d335d2a80d304,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3088598926959722466}
@@ -87,8 +84,7 @@ MeshFilter:
 --- !u!23 &3088598926959722467
 MeshRenderer:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 2300002, guid: f872bd6fcff3149f5a7d335d2a80d304,
-    type: 3}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3088598926959722466}
@@ -142,8 +138,12 @@ MonoBehaviour:
   pickedUp: 0
   throwable: 1
   targetPoints:
-  - TarPointPos: {x: 13.614421, y: 0.38886172, z: 9.212211}
+  - TarPointPos: {x: 13.962924, y: 2.7708635, z: 1.196079}
     TarPointRange: 1.4826026
+  - TarPointPos: {x: -22, y: 3.1, z: 5.5}
+    TarPointRange: 2.234501
+  - TarPointPos: {x: -22, y: 3.1, z: 8.3}
+    TarPointRange: 2.2404861
   playerForce: 0
   playerUsing: 0
   playerUseEffect: {fileID: 0}
@@ -155,11 +155,12 @@ MonoBehaviour:
     type: 3}
   objTargetOutline: {fileID: 0}
   IDTag: Trash
+  pickupName: 
   RewardAmount: 3
   AchCode: 2
   AchIncrement: 1
-  TaskCode: 0
-  TaskProgress: 0
+  TaskCode: 3
+  TaskProgress: 1
   locpos: {x: 0.1, y: 0, z: 1}
   locrot: {x: 0, y: 0, z: 90}
   soundImpact: {fileID: 8300000, guid: bbe2835063deb2c47b81a469a86084c7, type: 3}
@@ -177,7 +178,7 @@ Rigidbody:
   m_AngularDrag: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 2
+  m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!136 &3088598926959722468
@@ -231,7 +232,7 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 21.726513
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -471,7 +472,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3088598927621278594}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
   m_Name: 

@@ -154,6 +154,6 @@ public class notifyControl : MonoBehaviour {
 			}
 			yield return new WaitForSeconds(0.5f);
 		}
-		yield break;
+		//yield break;
 	}
 }

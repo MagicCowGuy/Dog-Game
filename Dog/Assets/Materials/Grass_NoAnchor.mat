@@ -15,7 +15,7 @@ MonoBehaviour:
   version: 5
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -23,7 +23,8 @@ Material:
   m_Name: Grass_NoAnchor
   m_Shader: {fileID: -6465566751694194690, guid: f653b233d715ed64f8760d520dbfa4c9,
     type: 3}
-  m_ShaderKeywords: _ALPHATEST_ON
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -37,6 +38,18 @@ Material:
         m_Texture: {fileID: 2800000, guid: ff949c1acb3754e2f9b3e53c3292c48e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - unity_Lightmaps:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_LightmapsInd:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - unity_ShadowMasks:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
     - Vector1_30596B1C: 0.35
@@ -44,6 +57,8 @@ Material:
     - Vector1_CAC1A894: 2.75
     - Vector1_D17A20F2: 0.09
     - Vector1_FF7ECE2F: 0.27
+    - _QueueControl: 0
+    - _QueueOffset: 0
     m_Colors:
     - Color_E572DD9C: {r: 0.7450981, g: 0.7450981, b: 0.7450981, a: 1}
     - Vector2_AC93AB59: {r: 2, g: 4, b: 6, a: 3}

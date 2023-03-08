@@ -21,6 +21,7 @@ public class expandMenu : MonoBehaviour
     public BuildControl buildcontrolscript;
     public AchievementsControl achievementscontrolscript;
     public QuestControl questcontrolscript;
+    public storeControl storeControlScript;
     public GameManager gamemanagerscript;
     public TaskControl taskControlScript;
 
@@ -80,7 +81,7 @@ public class expandMenu : MonoBehaviour
           achievementscontrolscript.ShowAchievementsUI();
       }
       if(selectedItem == 2){
-          questcontrolscript.OpenQuestLog();
+          storeControlScript.ShowStoreUI();
       }
       if(selectedItem == 3){
           gamemanagerscript.ShowMenu();

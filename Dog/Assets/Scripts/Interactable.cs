@@ -9,7 +9,7 @@ public class Interactable : MonoBehaviour {
 
 	public bool lockInInteract;
 	public GameObject parentForPlayer;
-	public Vector3 playerTargetLockPosition;
+	public Vector3 camOffset;
 
 	public GameObject playerObj;
 	private float distancetoPlayer;

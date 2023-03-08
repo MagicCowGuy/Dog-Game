@@ -158,7 +158,7 @@ MonoBehaviour:
     type: 3}
   gameControlObj: {fileID: 0}
   spawnPoints:
-  - {x: -22.603022, y: 24.952965, z: 18.64239}
+  - {x: -28, y: 38.8, z: 13}
   holdforplayer: 0
   curProgChapter: 0
   curProgSubChapter: 0
@@ -232,54 +232,66 @@ MonoBehaviour:
   PathNavPoints: []
   PathEnter:
   - moveType: 0
-    pathPointPos: {x: -22.1, y: 25, z: 16.6}
+    pathPointPos: {x: -27, y: 38.8, z: 13}
+  - moveType: 0
+    pathPointPos: {x: -23, y: 38.8, z: 12.3}
   - moveType: 1
-    pathPointPos: {x: -22.1, y: 25, z: 16.5}
+    pathPointPos: {x: -22.5, y: 37.35, z: 9}
   - moveType: 0
-    pathPointPos: {x: -22.6, y: 17.180252, z: 7.350497}
+    pathPointPos: {x: -22.5, y: 25.65, z: -2.5}
   - moveType: 0
-    pathPointPos: {x: -20.2, y: 16.6, z: 6.5}
+    pathPointPos: {x: -20.6, y: 25.65, z: -2.5}
   - moveType: 0
-    pathPointPos: {x: -20.308409, y: 16.6, z: 19.926884}
-  - moveType: 0
-    pathPointPos: {x: -22.849895, y: 16.6, z: 19.926884}
+    pathPointPos: {x: -20.6, y: 25.65, z: 12}
   - moveType: 1
-    pathPointPos: {x: -22.849895, y: 16.6, z: 18.073841}
+    pathPointPos: {x: -23, y: 25.65, z: 9.5}
   - moveType: 0
-    pathPointPos: {x: -22.849895, y: 8.736477, z: 7.6196246}
+    pathPointPos: {x: -23, y: 14, z: -2.5}
+  - moveType: 0
+    pathPointPos: {x: -20.6, y: 14, z: -2.5}
+  - moveType: 0
+    pathPointPos: {x: -20.6, y: 14, z: 12}
+  - moveType: 1
+    pathPointPos: {x: -23, y: 14, z: 9.5}
   - moveType: 2
-    pathPointPos: {x: -20.867226, y: 8.067504, z: 5.932129}
+    pathPointPos: {x: -23, y: 7.65, z: -3.5}
   - moveType: 0
-    pathPointPos: {x: -17.801668, y: 3.3899117, z: 1.3304023}
+    pathPointPos: {x: -18, y: 6.604515, z: -5.2634373}
   - moveType: 2
-    pathPointPos: {x: -18.02794, y: 3.634301, z: 9.384012}
+    pathPointPos: {x: -18, y: 6.16679, z: -1.6544887}
   - moveType: 0
-    pathPointPos: {x: -10.848698, y: 0.6062759, z: 7.920809}
+    pathPointPos: {x: -10.758608, y: 3.05, z: -0.37493005}
   PathExit:
   - moveType: 2
-    pathPointPos: {x: -11.864863, y: 0.6062759, z: 6.81}
+    pathPointPos: {x: -11.441772, y: 3.05, z: 0.59971845}
+  - moveType: 0
+    pathPointPos: {x: -15.181219, y: 0, z: -1.7084615}
   - moveType: 2
-    pathPointPos: {x: -17.570507, y: 3.5456102, z: 0.9899889}
-  - moveType: 0
-    pathPointPos: {x: -21.615105, y: 1.4557014, z: 5.410107}
-  - moveType: 0
-    pathPointPos: {x: -21.006193, y: 1.0993083, z: 10.695319}
-  - moveType: 0
-    pathPointPos: {x: -21.350365, y: 0.68878806, z: 11.60427}
+    pathPointPos: {x: -15.630355, y: 0, z: -9.066163}
   - moveType: 2
-    pathPointPos: {x: -21.350365, y: 0.8538242, z: 16.488626}
+    pathPointPos: {x: -18.061146, y: 4.0970407, z: -11.076807}
   - moveType: 0
-    pathPointPos: {x: -21.127151, y: -2.3997064, z: 20.12075}
+    pathPointPos: {x: -20.45976, y: 0, z: -10.713035}
+  - moveType: 2
+    pathPointPos: {x: -22.35312, y: 0, z: -11.326351}
   - moveType: 0
-    pathPointPos: {x: -23.313547, y: -2.3997064, z: 29.390602}
+    pathPointPos: {x: -24.670725, y: 1.2, z: -13.132877}
+  - moveType: 2
+    pathPointPos: {x: -24.670725, y: 1.2, z: -10.206306}
+  - moveType: 2
+    pathPointPos: {x: -27.088762, y: 5.820089, z: -9.31108}
   - moveType: 0
-    pathPointPos: {x: -28.20456, y: -2.3997064, z: 29.86633}
+    pathPointPos: {x: -28.454659, y: 2.2, z: -6.9652514}
+  - moveType: 0
+    pathPointPos: {x: -33.58788, y: 2.2, z: -4.758737}
+  - moveType: 2
+    pathPointPos: {x: -26.820688, y: 2.2, z: 5.8787293}
   lineToDraw:
   - {x: -17.801668, y: 3.3899117, z: 1.3304023}
   - {x: -18.02794, y: 3.634301, z: 7.04428}
-  idleAreaStart: {x: -11.5, y: 0.85, z: 5.5}
+  idleAreaStart: {x: -11.5, y: 3.05, z: -2}
   idleAreaWidth: 23
-  idleAreaDepth: 3.75
+  idleAreaDepth: 4
   catAnim: {fileID: 1935093430635538339}
   isPathing: 0
   isEntering: 0

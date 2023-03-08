@@ -167,7 +167,7 @@ public class NPC_TutorBird_Progress : MonoBehaviour
         yield return new WaitForSeconds(0.1f);
       }
 
-      pickupConScript.spawnPickup(ballPrefab, true, new Vector3(2,0,-5), Vector3.zero);
+      pickupConScript.spawnPickup(ballPrefab, true, transform.position + transform.forward * 3.5f, Vector3.zero);
 
       notifyConScript.InstructNote(new NoteToDisplay(3, "Pick up the ball.", "Tap the ball to pick it up."));
 
